@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plane-constant" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plane-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/html.tld" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/jsp/taglibs.jsp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/plane-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/BaseDaoMyBatis.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/plane-dao/src/main/resources/log4j.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/plane-domain" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plane-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/plane-util" charset="UTF-8" />
+  </component>
+</project>

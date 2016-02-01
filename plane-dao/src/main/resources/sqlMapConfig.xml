@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="false" />
+		<setting name="multipleResultSetsEnabled" value="true" />
+		<setting name="useColumnLabel" value="true" />
+		<setting name="defaultExecutorType" value="REUSE" />
+		<setting name="defaultStatementTimeout" value="25000" />
+	</settings>
+	<typeAliases>
+	    <!--  <typeAlias type="com.xiaofang.tinyhouse.platform.domain.pojo.FullInfoTopic" alias="FullInfoTopic"/>-->
+	</typeAliases>
+	<mappers>
+		<!--  <mapper resource="mysql/CrawlerBJJSProjectMapper.xml"/>-->
+		<mapper resource="mysql/UserMapper.xml"/>
+		<mapper resource="mysql/OutTicketMapper.xml"/>
+		<mapper resource="mysql/PAYMapper.xml"/>
+		<mapper resource="mysql/PlaneInfoMapper.xml"/>
+		<mapper resource="mysql/PlanePoolMapper.xml"/>
+		<mapper resource="mysql/PlaneTicketMapper.xml"/>
+		<mapper resource="mysql/ReturnMoneyMapper.xml"/>
+		<mapper resource="mysql/TicketMapper.xml"/>
+		<mapper resource="mysql/TicketReturnMapper.xml"/>
+		<mapper resource="mysql/CityMapper.xml"/>
+		<mapper resource="mysql/PlaneFirstMapper.xml"/>
+	</mappers>
+</configuration>

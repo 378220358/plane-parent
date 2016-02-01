@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/tx
+	http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+    ">
+
+	<!-- @Autowired -->
+	<context:annotation-config/>
+
+	<!-- @Service -->
+	<context:component-scan base-package="com.chen.plane.service"/>
+
+	<!-- 启动对@AspectJ注解支持 
+	<aop:aspectj-autoproxy/>-->
+
+	<!-- 启动对@Transactional注解支持 -->
+	<tx:annotation-driven/>
+
+	<!-- 配置Spring管理实务 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<!--查询操作特殊方法-->
+			<tx:method name="getEstateNewsList" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="getNoticeList" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="getSmsCaptcha" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="showFullInfoTopic" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="login" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="usePlatformLogin" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="goVote" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>			<!--查询操作-->
+			<tx:method name="get*" read-only="true"/>
+			<tx:method name="query*" read-only="true"/>
+			<tx:method name="find*" read-only="true"/>
+			<tx:method name="login*" read-only="true"/>
+			<!--插入操作-->
+			<tx:method name="insert*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="add*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="save*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="submit*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<!--更新操作-->
+			<tx:method name="update*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="modify*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="change*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<!--删除操作-->
+			<tx:method name="delete*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<tx:method name="remove*" propagation="REQUIRED" rollback-for="Throwable" timeout="120"/>
+			<!--其他操作-->
+			<tx:method name="*" rollback-for="Throwable" timeout="120"/>
+		</tx:attributes>
+	</tx:advice>
+	<!--  
+	<aop:config>
+		<aop:pointcut id="serviceMethodPointCut" expression="execution(* com.xiaofang.tinyhouse.platform.service.*.*(..))"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethodPointCut"/>
+	</aop:config>-->
+	<!-- 错误日志发件人配置 
+	<bean id="errorSender" class="com.xiaofang.tinyhouse.platform.domain.pojo.ErrorSender">
+		<property name="errorSenderEmail" value="xiaofangkeji@126.com" />
+		<property name="userName" value="xiaofangkeji" />
+		<property name="password" value="hsgpxpksdkkaiiwe" />
+		<property name="stmp" value="smtp.126.com" />
+		<property name="smtpAuth" value="true" />
+	</bean>-->
+</beans>
