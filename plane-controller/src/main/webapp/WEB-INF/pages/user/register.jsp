@@ -14,7 +14,12 @@
 </head>
 <body>
   <div class="bodyTop" >
-    dfd
+    <div class="menu">
+        ddd
+    </div>
+  </div>
+  <div class="bodyCenter">
+
   </div>
 </body>
 </html>
