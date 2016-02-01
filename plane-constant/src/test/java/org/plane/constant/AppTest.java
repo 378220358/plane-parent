@@ -37,6 +37,6 @@ public class AppTest
     }
 
     public void test(){
-        System.out.println();
+        System.out.println(66666);
     }
 }
