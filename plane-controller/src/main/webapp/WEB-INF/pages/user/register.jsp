@@ -26,6 +26,9 @@
   <div class="bodyCenter">
     <div class="register">
         <div class="panel panel-danger" style="width:400px;">
+            <div class="panel-heading" >
+                <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">快速注册</font></h3>
+            </div>
             <div class="panel-body">
                 <form class="form-horizontal" method="post" action="login.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm">
                     <div class="input-group">
