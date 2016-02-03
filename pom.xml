@@ -60,9 +60,12 @@
 	<!-- json -->
 	<fastjson_version>1.2.6</fastjson_version>
 	<jackson_fasterxml_version>2.3.4</jackson_fasterxml_version>
+	  <json_lib_version>2.4</json_lib_version>
 	  <!-- spring aop -->
 	  <aopalliance_version>1.0</aopalliance_version>
 	  <aspectjrt_version>1.7.0</aspectjrt_version>
+	  <stax2_version>3.1.4</stax2_version>
+	  <jackson_version>1.9.2</jackson_version>
   </properties>
 
   <dependencies>
@@ -222,6 +225,26 @@
 	  <artifactId>log4j</artifactId>
 	  <version>${log4j_version}</version>
   	</dependency>
+	  <dependency>
+		  <groupId>net.sf.json-lib</groupId>
+		  <artifactId>json-lib</artifactId>
+		  <version>${json_lib_version}</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.codehaus.woodstox</groupId>
+		  <artifactId>stax2-api</artifactId>
+		  <version>${stax2_version}</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.codehaus.jackson</groupId>
+		  <artifactId>jackson-mapper-asl</artifactId>
+		  <version>${jackson_version}</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>org.codehaus.jackson</groupId>
+		  <artifactId>jackson-core-asl</artifactId>
+		  <version>${jackson_version}</version>
+	  </dependency>
   </dependencies>
   <build>
        <finalName>plane-parent</finalName>

@@ -29,16 +29,17 @@ public class DaoTest {
 		user.setUserName("admin");
 		user.setUserPwd("admin");
 		City city = new City();
-		city.setCityId(1);
-		city.setCityName("北京");
+
+		city.setCityName("郑州");
 		City city1 = new City();
-		city1.setCityId(2);
-		city1.setCityName("上海");
+
+		city1.setCityName("杭州");
 		List<City> cityList = new ArrayList<City>();
 		cityList.add(city);
 		cityList.add(city1);
-		for (City city2 : cityDao.getAllCity()){
-			System.out.println(city2);
-		}
+		cityDao.addBathCity(cityList);
+//		for (City city2 : cityDao.getAllCity()){
+//			System.out.println(city2);
+//		}
 	}
 }

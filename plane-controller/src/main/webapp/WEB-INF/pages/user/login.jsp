@@ -10,16 +10,17 @@
   <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/bootstrap.css"/>">
   <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/bootstrap-theme.min.css"/>">
   <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/validate.css"/> ">
-  <script language="JavaScript" type="text/javascript" src="<c:url value="/modules/common/js/jquery-2.1.4.min.js"/>"/>
-  <script language="JavaScript" type="text/javascript" src="<c:url value="/modules/common/js/jquery.validate.js"/> "/>
-  <script language="JavaScript" type="text/javascript" src="<c:url value="/modules/common/js/validate.js"/> "/>
-  <script type="text/javascript">
+  <script language="javascript" type="text/javascript" src="<c:url value="/modules/common/js/jquery-2.1.4.min.js"/>"></script>
+  <script language="javascript" type="text/javascript" src="<c:url value="/modules/common/js/jquery.validate.js"/> "></script>
+  <script language="javascript" type="text/javascript" src="<c:url value="/modules/common/js/validate.js"/> "></script>
+  <script type="text/javascript" language="javascript">
     $(function(){
-      $("#loginSubmit").onClick(function(){
-        alert(66666);
+      $("#loginSubmit").click(function(){
+        $.post("login.do",$("#myForm").serialize(),function(data){
+          alert(5666);
+        });
       });
     })
-
   </script>
 </head>
 

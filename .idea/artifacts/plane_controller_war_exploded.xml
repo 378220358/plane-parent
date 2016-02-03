@@ -13,8 +13,14 @@
           <element id="archive" name="plane-domain-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="plane-domain" />
           </element>
+          <element id="archive" name="plane-constant-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="plane-constant" />
+          </element>
           <element id="archive" name="plane-service-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="plane-service" />
+          </element>
+          <element id="archive" name="plane-util-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="plane-util" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.0.5.RELEASE" />
@@ -48,6 +54,14 @@
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.1.1" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis-spring:1.2.2" />
           <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Maven: net.sf.json-lib:json-lib:2.4" />
+          <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
+          <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
+          <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.5" />
+          <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
+          <element id="library" level="project" name="Maven: org.codehaus.woodstox:stax2-api:3.1.4" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.2" />
+          <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">
