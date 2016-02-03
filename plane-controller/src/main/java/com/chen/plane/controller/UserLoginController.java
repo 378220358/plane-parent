@@ -58,7 +58,7 @@ public class UserLoginController {
 			appServerResult.setData("用户名或密码为空!");
 		}
 		if (userService.getUserById(user) != null) {
-			appServerResult.setData("登录成功！");
+			appServerResult.setData("验证成功即将登录...！");
 		} else {
 			appServerResult = AppServerResult.generateFailureResult();
 			appServerResult.setData("用户名或密码错误！");

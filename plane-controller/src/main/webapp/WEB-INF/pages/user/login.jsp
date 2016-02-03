@@ -16,9 +16,24 @@
   <script type="text/javascript" language="javascript">
     $(function(){
       $("#loginSubmit").click(function(){
-        $.post("login.do",$("#myForm").serialize(),function(data){
-          alert(5666);
-        });
+        var flag = true;
+        if($("#userName").val() == ''){
+          flag = false;
+          alert("用户名不能为空");
+          $("#userName").focus();
+        }else if($("#userPwd").val() == ''){
+          flag = false;
+          alert("密码不能为空！");
+          $("#userPwd").focus();
+        }
+        if(flag){
+          $.post("login.do",$("#myForm").serialize(),function(data){
+            if(data.code == '00000'){
+              $("#showInfo").show();
+              $("#showInfo").html(data.data);
+            }
+          });
+        }
       });
     })
   </script>
@@ -36,10 +51,7 @@
       <form class="form-horizontal" method="post" action="login.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm">
         <table>
           <tr>
-            <input type="hidden" name="origUrl" value="${origUrl}" />
-            <c:if test="${not empty errInfo}">
-              <p style="color:red;">${errInfo}</p>
-            </c:if>
+            <center><span id="showInfo" style="display: none;color: red"></span></center>
             <td>用户名：</td>
             <td width="220"><input type="text" class="form-control" id="userName"placeholder="请输入用户名" name="userName" value="${account}"></td>
             <td></td>

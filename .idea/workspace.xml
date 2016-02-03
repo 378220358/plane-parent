@@ -2,42 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ab31667-727f-42fc-bcab-731713e82c50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/AppServerResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/BaseResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/CityDaoTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/CookieUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/date/DateFormatUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/GatewayMqttResult.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/json/JSONConvertUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/json/JsonDateValueProcessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_woodstox_stax2_api_3_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/RequestUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/ResponseUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/DaoTest.java" afterPath="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/DaoTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/filter/LoginValidateFilter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java" afterPath="$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserLoginController.java" afterPath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserLoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/log4j.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/log4j.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-constant/plane-constant.iml" afterPath="$PROJECT_DIR$/plane-constant/plane-constant.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/plane-controller.iml" afterPath="$PROJECT_DIR$/plane-controller/plane-controller.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/plane-dao.iml" afterPath="$PROJECT_DIR$/plane-dao/plane-dao.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-domain/plane-domain.iml" afterPath="$PROJECT_DIR$/plane-domain/plane-domain.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-parent.iml" afterPath="$PROJECT_DIR$/plane-parent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-service/plane-service.iml" afterPath="$PROJECT_DIR$/plane-service/plane-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-util/plane-util.iml" afterPath="$PROJECT_DIR$/plane-util/plane-util.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/plane_controller_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/plane_controller_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-constant/pom.xml" afterPath="$PROJECT_DIR$/plane-constant/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/pom.xml" afterPath="$PROJECT_DIR$/plane-controller/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-domain/pom.xml" afterPath="$PROJECT_DIR$/plane-domain/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="plane-parent.iws" />
@@ -67,41 +37,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="UserLoginController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserLoginController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserLoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
+            <state vertical-scroll-proportion="1.201613">
+              <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResponseUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/ResponseUtils.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
+            <state vertical-scroll-proportion="-5.0">
+              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-controller/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.92">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonDateValueProcessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/json/JsonDateValueProcessor.java">
+      <file leaf-file-name="LoginValidateFilter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/filter/LoginValidateFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,23 +69,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="AppServerResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/AppServerResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.109091">
-              <caret line="67" column="46" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppServerResult.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/AppServerResult.java">
+      <file leaf-file-name="AppServerResultCode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.70564514">
-              <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="18" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#495#496#0" expanded="true" />
+                <element signature="e#513#514#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,6 +99,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="35" column="17" selection-start-line="31" selection-start-column="4" selection-end-line="35" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.322034">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -168,8 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/UserService.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/main/main.jsp" />
         <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/OutTicketMapper.xml" />
@@ -207,18 +178,20 @@
         <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/CityMapper.xml" />
         <option value="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/CityDaoTest.java" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/ticketMain.jsp" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp" />
         <option value="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/RequestUtil.java" />
         <option value="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/json/JsonDateValueProcessor.java" />
         <option value="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/date/DateFormatUtil.java" />
         <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/AppMqttResult.java" />
         <option value="$PROJECT_DIR$/plane-controller/pom.xml" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserLoginController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java" />
         <option value="$PROJECT_DIR$/plane-constant/pom.xml" />
         <option value="$PROJECT_DIR$/plane-domain/pom.xml" />
         <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/AppServerResult.java" />
+        <option value="$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserLoginController.java" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/filter/LoginValidateFilter.java" />
       </list>
     </option>
   </component>
@@ -485,7 +458,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plane-constant" />
+              <option name="myItemId" value="plane-controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -499,7 +472,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plane-constant" />
+              <option name="myItemId" value="plane-controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -517,7 +490,161 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plane-constant" />
+              <option name="myItemId" value="plane-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -533,7 +660,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="constant" />
+              <option name="myItemId" value="plane" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -547,7 +678,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="plane-constant" />
+              <option name="myItemId" value="plane-controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -563,7 +694,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="rpc" />
+              <option name="myItemId" value="plane" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1165,7 +1296,7 @@
       <workItem from="1454309642909" duration="10935000" />
       <workItem from="1454375881947" duration="10538000" />
       <workItem from="1454389613807" duration="4588000" />
-      <workItem from="1454443940572" duration="11300000" />
+      <workItem from="1454443940572" duration="14230000" />
     </task>
     <task id="LOCAL-00001" summary="初始版本">
       <created>1454309363879</created>
@@ -1221,11 +1352,17 @@
       <option name="project" value="LOCAL" />
       <updated>1454475214063</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="登录相关">
+      <created>1454486372626</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1454486372626</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87555000" />
+    <option name="totallyTimeSpent" value="90485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1275,7 +1412,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="[change]注册界面" />
     <MESSAGE value="注册页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="注册页面" />
+    <MESSAGE value="登录相关" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录相关" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1288,20 +1426,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneFirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5560538">
-          <caret line="197" column="28" selection-start-line="197" selection-start-column="28" selection-end-line="197" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33183858">
-          <caret line="163" column="28" selection-start-line="163" selection-start-column="28" selection-end-line="163" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlanePool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33183858">
@@ -1626,14 +1750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.23728813">
-          <caret line="18" column="66" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/RequestUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.149194">
@@ -1650,22 +1766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.92">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserLoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="66" column="20" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/json/JsonDateValueProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1673,14 +1773,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/ResponseUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1708,14 +1800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9072581">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plane-domain/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.161435">
@@ -1724,13 +1808,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5515695">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/web/ResponseUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3104838">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/rpc/AppServerResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70564514">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-constant/src/main/java/com/chen/plane/constant/rpc/AppServerResultCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#513#514#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.322034">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/filter/LoginValidateFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.201613">
+          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
