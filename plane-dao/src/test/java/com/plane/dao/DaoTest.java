@@ -1,9 +1,13 @@
 package com.plane.dao;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
+import com.chen.plane.dao.CityDao;
 import com.chen.plane.dao.UserDao;
+import com.chen.plane.domain.pojo.City;
 import com.chen.plane.domain.pojo.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,11 +21,24 @@ import com.chen.plane.dao.TestDao;
 public class DaoTest {
 	@Autowired
 	private UserDao userDao;
+	@Autowired
+	private CityDao cityDao;
 	@Test
 	public void testDao(){
 		User user = new User();
 		user.setUserName("admin");
 		user.setUserPwd("admin");
-		System.out.println(userDao.getUserById(user));;
+		City city = new City();
+		city.setCityId(1);
+		city.setCityName("北京");
+		City city1 = new City();
+		city1.setCityId(2);
+		city1.setCityName("上海");
+		List<City> cityList = new ArrayList<City>();
+		cityList.add(city);
+		cityList.add(city1);
+		for (City city2 : cityDao.getAllCity()){
+			System.out.println(city2);
+		}
 	}
 }
