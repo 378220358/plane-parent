@@ -59,12 +59,13 @@ public class UserLoginController {
 		}
 		if (userService.getUserById(user) != null) {
 			appServerResult.setData("验证成功即将登录...！");
+			request.getSession().setAttribute("user",user);
 		} else {
 			appServerResult = AppServerResult.generateFailureResult();
 			appServerResult.setData("用户名或密码错误！");
 		}
 		ResponseUtils.printJsonData(response, JSONConvertUtil.convertObjectToJSONString(appServerResult));
-		return null;
+		return "/ticket/ticketMain";
 	}
 
 	/**

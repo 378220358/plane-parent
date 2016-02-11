@@ -1,5 +1,7 @@
 package com.chen.plane.filter;
 
+import com.chen.plane.domain.pojo.User;
+
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,9 +20,12 @@ public class LoginValidateFilter implements Filter {
 	}
 
 	@Override public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-		HttpServletRequest request1 = (HttpServletRequest) request;
-		HttpServletResponse response1 = (HttpServletResponse) response;
-
+		HttpServletRequest httpServletRequest = (HttpServletRequest) request;
+		HttpServletResponse httpServletResponse = (HttpServletResponse) response;
+		User user = (User) ((HttpServletRequest) request).getSession().getAttribute("user");
+		
+		//将请求下传
+		chain.doFilter(httpServletRequest,httpServletResponse);
 	}
 
 	@Override public void destroy() {
