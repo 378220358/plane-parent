@@ -34,6 +34,16 @@
 			<jdbc.maxIdle>10</jdbc.maxIdle>
 			<jdbc.maxWait>3000</jdbc.maxWait>
 			<jdbc.maxActive>3</jdbc.maxActive>
+			<!-- redis 配置 -->
+			<redis.host>127.0.0.1</redis.host>
+			<redis.port>6379</redis.port>
+			<redis.default.db>0</redis.default.db>
+			<redis.pass></redis.pass>
+			<redis.timeout>3000</redis.timeout>
+			<redis.maxActive>300</redis.maxActive>
+			<redis.maxIdle>100</redis.maxIdle>
+			<redis.maxWait>1000</redis.maxWait>
+			<redis.testOnBorrow>true</redis.testOnBorrow>
   		</properties>
   	</profile>
   </profiles>
@@ -66,6 +76,9 @@
 	  <aspectjrt_version>1.7.0</aspectjrt_version>
 	  <stax2_version>3.1.4</stax2_version>
 	  <jackson_version>1.9.2</jackson_version>
+	  <!-- redis -->
+	  <redis_version>2.6.0</redis_version>
+	  <spring_data_redis_version>1.4.0.RELEASE</spring_data_redis_version>
   </properties>
 
   <dependencies>
@@ -137,6 +150,11 @@
 		<artifactId>spring-core</artifactId>
 		<version>${spring_version}</version>
 	</dependency>
+	  <dependency>
+		  <groupId>org.springframework.data</groupId>
+		  <artifactId>spring-data-redis</artifactId>
+		  <version>${spring_data_redis_version}</version>
+	  </dependency>
 	  <dependency>
 		  <groupId>org.aspectj</groupId>
 		  <artifactId>aspectjweaver</artifactId>
@@ -244,6 +262,12 @@
 		  <groupId>org.codehaus.jackson</groupId>
 		  <artifactId>jackson-core-asl</artifactId>
 		  <version>${jackson_version}</version>
+	  </dependency>
+	  <!-- redis dependency -->
+	  <dependency>
+		  <groupId>redis.clients</groupId>
+		  <artifactId>jedis</artifactId>
+		  <version>${redis_version}</version>
 	  </dependency>
   </dependencies>
   <build>

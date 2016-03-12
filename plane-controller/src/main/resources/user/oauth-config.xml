@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+	<bean id="oAuthConfig" class="com.chen.plane.util.oauth.OAuthConfig">
+		<property name="includeUrls">
+			<list>
+				<value>/tinyhouse/console/login/(.*)</value>
+				<value>/modules/main/(.*)</value>
+				<value>/main/(.*)</value>
+				<value>/modules/(.*)</value>
+				<value>/manager/(.*)</value>
+				<value>/image/(.*)</value>
+				<value>/file/(.*)</value>
+				<value>/article/(.*)</value>
+			</list>
+		</property>
+		<property name="redirectUri">
+			<value></value>
+		</property>
+	</bean>
+</beans>
