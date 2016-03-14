@@ -10,7 +10,13 @@
         <dependent-module archiveName="plane-domain-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/plane-domain/plane-domain">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="plane-constant-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/plane-constant/plane-constant">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="plane-service-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/plane-service/plane-service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plane-util-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/plane-util/plane-util">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="plane-controller"/>

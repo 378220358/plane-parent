@@ -13,14 +13,17 @@
           <element id="archive" name="plane-domain-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="plane-domain" />
           </element>
-          <element id="archive" name="plane-constant-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="plane-constant" />
-          </element>
           <element id="archive" name="plane-service-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="plane-service" />
           </element>
           <element id="archive" name="plane-util-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="plane-util" />
+          </element>
+          <element id="archive" name="plane-cache-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="plane-cache" />
+          </element>
+          <element id="archive" name="plane-constant-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="plane-constant" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.0.5.RELEASE" />

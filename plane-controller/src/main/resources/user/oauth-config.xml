@@ -6,14 +6,9 @@
 	<bean id="oAuthConfig" class="com.chen.plane.util.oauth.OAuthConfig">
 		<property name="includeUrls">
 			<list>
-				<value>/tinyhouse/console/login/(.*)</value>
-				<value>/modules/main/(.*)</value>
-				<value>/main/(.*)</value>
-				<value>/modules/(.*)</value>
-				<value>/manager/(.*)</value>
-				<value>/image/(.*)</value>
-				<value>/file/(.*)</value>
-				<value>/article/(.*)</value>
+				<value>/plane/user/*/(.*)</value>
+				<value>/plane/main/(.*)</value>
+				<value>/modules/common/images/(.*)</value>
 			</list>
 		</property>
 		<property name="redirectUri">

@@ -58,8 +58,16 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Annotation profile for plane-cache" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="plane-cache" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="plane-cache" target="1.6" />
       <module name="plane-constant" target="1.6" />
       <module name="plane-controller" target="1.6" />
       <module name="plane-dao" target="1.6" />

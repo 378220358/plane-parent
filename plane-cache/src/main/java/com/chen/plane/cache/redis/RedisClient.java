@@ -1,4 +1,4 @@
-package com.chen.plane.util.redis;
+package com.chen.plane.cache.redis;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;

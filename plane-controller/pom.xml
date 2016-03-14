@@ -35,6 +35,17 @@
 		  <artifactId>plane-util</artifactId>
 		  <version>${project.parent.version}</version>
 	  </dependency>
+	  <dependency>
+		  <groupId>${project.parent.groupId}</groupId>
+		  <artifactId>plane-cache</artifactId>
+		  <version>${project.parent.version}</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>${project.parent.groupId}</groupId>
+		  <artifactId>plane-constant</artifactId>
+		  <version>${project.parent.version}</version>
+	  </dependency>
+
     <!-- spring dependency -->
 	<dependency>
 		<groupId>org.springframework</groupId>

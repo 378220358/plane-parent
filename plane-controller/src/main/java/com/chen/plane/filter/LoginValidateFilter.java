@@ -1,10 +1,10 @@
 package com.chen.plane.filter;
 
 import com.alibaba.fastjson.JSON;
+import com.chen.plane.cache.redis.RedisClient;
 import com.chen.plane.constant.user.UserLoginConstant;
 import com.chen.plane.domain.pojo.User;
 import com.chen.plane.util.oauth.OAuthConfig;
-import com.chen.plane.util.redis.RedisClient;
 import com.chen.plane.util.web.RequestUtil;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.ArrayUtils;
@@ -41,6 +41,9 @@ public class LoginValidateFilter implements Filter {
 		encoding = filterConfig.getInitParameter("encoding");
 		try {
 			oAuthConfig = (OAuthConfig) new FileSystemXmlApplicationContext("classpath:user/oauth-config.xml").getBean("oAuthConfig");
+			for (String s : oAuthConfig.getExcludeUrls()){
+				System.out.println("oAuthConfig : " + s);
+			}
 		}catch (Exception e){
 			e.printStackTrace();
 			log.debug("LoginValidateFilter.init error" + e.getMessage());
@@ -49,7 +52,7 @@ public class LoginValidateFilter implements Filter {
 
 	@Override public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		log.debug("LoginValidateFilter.doFilter>>>");
-		request.setCharacterEncoding(encoding);
+		request.setCharacterEncoding("utf-8");
 		HttpServletRequest httpServletRequest = (HttpServletRequest) request;
 		HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 		String referUrl = RequestUtil.getReferUrl(httpServletRequest);
@@ -63,11 +66,13 @@ public class LoginValidateFilter implements Filter {
 		log.debug("Request-[uri: " + uri + "]");
 		log.debug("---------------------------------------------");
 		if (oAuthConfig.exclude(referUrl)){
+			log.debug("include referUrl");
 			chain.doFilter(httpServletRequest,httpServletResponse);
 		}else {
+			log.debug("验证Cookie");
 			Cookie[] cookies = httpServletRequest.getCookies();
 			if (ArrayUtils.isEmpty(cookies)){
-				httpServletRequest.getRequestDispatcher("/plane/user/login.do").forward(httpServletRequest,httpServletResponse);
+				httpServletRequest.getRequestDispatcher("/plane/user/index.do").forward(httpServletRequest,httpServletResponse);
 				return;
 			}
 			Boolean isLoginFlag = false;
@@ -94,7 +99,7 @@ public class LoginValidateFilter implements Filter {
 			if (isLoginFlag){
 				chain.doFilter(httpServletRequest,httpServletResponse);
 			}else {
-				httpServletRequest.getRequestDispatcher("/plane/user/login.do").forward(httpServletRequest,httpServletResponse);
+				httpServletRequest.getRequestDispatcher("/plane/user/index.do").forward(httpServletRequest,httpServletResponse);
 			}
 		}
 

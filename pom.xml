@@ -17,6 +17,7 @@
   	<module>plane-service</module>
   	<module>plane-util</module>
   	<module>plane-controller</module>
+  	<module>plane-cache</module>
   </modules>
   <profiles>
   	<profile>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/plane-cache/plane-cache.iml" filepath="$PROJECT_DIR$/plane-cache/plane-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/plane-constant/plane-constant.iml" filepath="$PROJECT_DIR$/plane-constant/plane-constant.iml" />
       <module fileurl="file://$PROJECT_DIR$/plane-controller/plane-controller.iml" filepath="$PROJECT_DIR$/plane-controller/plane-controller.iml" />
       <module fileurl="file://$PROJECT_DIR$/plane-dao/plane-dao.iml" filepath="$PROJECT_DIR$/plane-dao/plane-dao.iml" />
