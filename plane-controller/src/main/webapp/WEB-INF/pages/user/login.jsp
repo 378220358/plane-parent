@@ -26,14 +26,6 @@
           alert("密码不能为空！");
           $("#userPwd").focus();
         }
-        if(flag){
-          $.post("login.do",$("#myForm").serialize(),function(data){
-            if(data.code == '00000'){
-              $("#showInfo").show();
-              $("#showInfo").html(data.data);
-            }
-          });
-        }
       });
     })
   </script>
@@ -48,7 +40,7 @@
       <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">登录界面</font></h3>
     </div>
     <div class="panel-body">
-      <form class="form-horizontal" method="post" action="login.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm">
+      <form class="form-horizontal" method="post" action="/plane/user/login.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm">
         <table>
           <tr>
             <center><span id="showInfo" style="display: none;color: red"></span></center>
@@ -59,12 +51,12 @@
           <tr>
             <td>密 码：</td>
             <td><input type="password" class="form-control" id="userPwd"placeholder="请输入密码" name="userPwd"></td>
-            <td><a href="registerIndex.do" >注册</td>
+            <td><a href="/plane/user/registerIndex.do" >注册</td>
           </tr><tr><td class="text-center"><font size="1.5" color="red">${loginInfo}</font>　</td></tr>
           <tr>
             <td></td>
             <td>
-              <button type="button" class="btn btn-primary" id="loginSubmit">登录</button>
+              <button type="submit" class="btn btn-primary" id="loginSubmit">登录</button>
               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
               <a href="index.html">
                 <button type="reset" class="btn btn-primary">重置</button>

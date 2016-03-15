@@ -27,7 +27,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping(value = "/plane/user")
-public class UserLoginController {
+public class UserLoginController extends BaseController{
 	private static final Logger log = Logger.getLogger(UserLoginController.class);
 	@Autowired
 	private UserService userService;
@@ -52,32 +52,57 @@ public class UserLoginController {
 	@RequestMapping(value = "/login.do",method = RequestMethod.POST)
 	public String login(User user,ModelMap modelMap,HttpServletRequest request,HttpServletResponse response) throws JsonProcessingException {
 		log.debug("UserLoginController.login>>>");
-		AppServerResult appServerResult = AppServerResult.generateSuccessResult();
+		String returnUrl = "/user/login";
 		if (user == null) {
-			appServerResult = AppServerResult.generateFailureResult();
-			appServerResult.setData("用户名或密码为空!");
+			return returnUrl;
 		}
-		if (userService.getUserById(user) != null) {
-			appServerResult.setData("验证成功即将登录...！");
-			request.getSession().setAttribute("user",user);
+		User user1 = userService.getUserById(user);
+		if (user1 != null) {
+			cacheUserLoginState(user,response);
+			modelMap.addAttribute("userInfo", user1);
+			returnUrl =  "/ticket/ticketMain";
 		} else {
-			appServerResult = AppServerResult.generateFailureResult();
-			appServerResult.setData("用户名或密码错误！");
+			modelMap.addAttribute("error", "用户名或密码错误");
 		}
-		ResponseUtils.printJsonData(response, JSONConvertUtil.convertObjectToJSONString(appServerResult));
-		return "/ticket/ticketMain";
+		return returnUrl;
 	}
 
 	/**
 	 * 注册首页
-	 * @param user
 	 * @return
 	 */
 	@RequestMapping(value = "/registerIndex.do",method = RequestMethod.GET)
-	public String registerIndex(User user){
+	public String registerIndex(){
 		log.debug("UserLoginController.registerIndex>>>");
 		log.debug("UserLoginController.registerIndex<<<");
 		return "/user/register";
 	}
+
+	/**
+	 * 用户注册
+	 * @param user
+	 * @param response
+	 * @return
+	 */
+	@RequestMapping(value = "/register.do",method = RequestMethod.POST)
+	public String register(User user,HttpServletResponse response,ModelMap modelMap){
+		log.debug("UserLoginController.register>>>");
+		String registerUrl = "/user/login";
+		try {
+			if (user != null){
+				userService.registerUser(user);
+			}else {
+				modelMap.put("error","您输入用户名和密码为空，请重新输入");
+				registerUrl = "/user/register";
+			}
+		}catch (Exception e){
+			registerUrl = "/user/register";
+			modelMap.addAttribute("error","系统发生异常，请稍后重试");
+			e.printStackTrace();
+		}
+		log.debug("UserLoginController.register<<<");
+		return registerUrl;
+	}
+
 
 }

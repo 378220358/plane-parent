@@ -15,4 +15,11 @@ public interface UserService {
 	 * @param user
 	 */
 	public User getUserById(User user);
+
+	/**
+	 * 注册用户
+	 * @param user
+	 * @return
+	 */
+	void registerUser(User user);
 }

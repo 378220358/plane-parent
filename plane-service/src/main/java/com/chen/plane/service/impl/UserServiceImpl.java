@@ -24,4 +24,10 @@ public class UserServiceImpl implements UserService {
 		log.debug("UserServiceImpl.getUserById<<<");
 		return userR;
 	}
+
+	@Override public void registerUser(User user) {
+		log.debug("UserServiceImpl.registerUser>>>");
+		userDao.registerUser(user);
+		log.debug("UserServiceImpl.registerUser<<<");
+	}
 }

@@ -41,7 +41,7 @@ public class LoginValidateFilter implements Filter {
 		encoding = filterConfig.getInitParameter("encoding");
 		try {
 			oAuthConfig = (OAuthConfig) new FileSystemXmlApplicationContext("classpath:user/oauth-config.xml").getBean("oAuthConfig");
-			for (String s : oAuthConfig.getExcludeUrls()){
+			for (String s : oAuthConfig.getIncludeUrls()){
 				System.out.println("oAuthConfig : " + s);
 			}
 		}catch (Exception e){
@@ -65,7 +65,7 @@ public class LoginValidateFilter implements Filter {
 		log.debug("Request-[url: " + url + "]");
 		log.debug("Request-[uri: " + uri + "]");
 		log.debug("---------------------------------------------");
-		if (oAuthConfig.exclude(referUrl)){
+		if (oAuthConfig.include(uri)){
 			log.debug("include referUrl");
 			chain.doFilter(httpServletRequest,httpServletResponse);
 		}else {

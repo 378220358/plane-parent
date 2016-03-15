@@ -21,4 +21,10 @@ public class UserDaoMybatis extends BaseDaoMyBatis implements UserDao {
 		log.debug("UserDaoMybatis.getUserById<<<");
 		return userR;
 	}
+
+	@Override public void registerUser(User user) {
+		log.debug("UserDaoMybatis.registerUser>>>");
+		getSqlSession().insert(NAMESPACE + "insertSelective" ,user);
+		log.debug("UserDaoMybatis.registerUser<<<");
+	}
 }

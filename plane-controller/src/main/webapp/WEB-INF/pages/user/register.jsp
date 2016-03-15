@@ -15,7 +15,28 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/bootstrap.css"/>">
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/bootstrap-theme.min.css"/>">
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/validate.css"/> ">
-
+    <script language="javascript" type="javascript" src="<c:url value="/modules/common/js/validate.js"/>"/>
+    <script type="javascript">
+        function validateRegister(){
+            var userName = $("#userName").val();
+            var userPwd = $("#userPwd").val();
+            var userSurePwd = $("userSurePwd").val();
+            if(userName == null){
+                alert("请输入用户名");
+            }
+            if(userPwd == null){
+                alert("请输入密码");
+                if(userSurePwd == null){
+                    alert("请再次输入密码");
+                }else{
+                    if(userPwd == userSurePwd){
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+    </script>
 </head>
 <body>
   <div class="bodyTop" >
@@ -30,25 +51,25 @@
                 <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">快速注册</font></h3>
             </div>
             <div class="panel-body">
-                <form class="form-horizontal" method="post" action="login.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm">
+                <form class="form-horizontal" method="post" action="/plane/user/register.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm" onsubmit="return validateRegister()">
                     <div class="input-group">
-                        <span class="input-group-addon" id="userName">用&nbsp 户&nbsp&nbsp名：</span>
-                        <input type="text" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1">
+                        <span class="input-group-addon">用&nbsp 户&nbsp&nbsp名：</span>
+                        <input type="text" name="userName"  id="userName" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1">
                     </div>
                     <p></p>
                     <div class="input-group">
-                        <span class="input-group-addon" id="userPwd">密&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp码：</span>
-                        <input type="text" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon1">
+                        <span class="input-group-addon" >密&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp码：</span>
+                        <input type="password" id="userPwd" name="userPwd" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon1">
                     </div>
                     <p></p>
                     <div class="input-group">
                         <span class="input-group-addon" id="userSurePwd">确认密码：</span>
-                        <input type="text" class="form-control" placeholder="请再次输入密码" aria-describedby="basic-addon1">
+                        <input type="password" class="form-control" placeholder="请再次输入密码" aria-describedby="basic-addon1">
                     </div>
                     <p></p>
                     <div>
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                        <button type="button" class="btn btn-primary" id="registerSubmit">注册</button>
+                        <button type="submit" class="btn btn-primary" id="registerSubmit">注册</button>
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                         <button type="reset" class="btn btn-primary" id="reset">重置</button>
                     </div>

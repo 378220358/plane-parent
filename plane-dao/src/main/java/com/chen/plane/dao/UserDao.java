@@ -16,4 +16,10 @@ public interface UserDao {
 	 * @return
 	 */
 	public User getUserById(User user);
+
+	/**
+	 * 用户注册
+	 * @param user
+	 */
+	void registerUser(User user);
 }
