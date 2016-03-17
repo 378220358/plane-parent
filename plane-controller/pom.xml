@@ -20,11 +20,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
-		<groupId>${project.parent.groupId}</groupId>
-		<artifactId>plane-dao</artifactId>
-		<version>${project.parent.version}</version>
-	</dependency>
 	<dependency>
 	  <groupId>${project.parent.groupId}</groupId>
 	  <artifactId>plane-service</artifactId>

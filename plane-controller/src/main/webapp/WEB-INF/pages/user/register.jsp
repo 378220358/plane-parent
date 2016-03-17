@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/modules/common/jsp/taglibs.jsp"%>
 <html>
-<>
+<head>
     <title>用户注册界面</title>
     <link type="text/css" rel="stylesheet" href="<c:url value="/modules/common/css/com.css" />">
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/login.css"/> ">

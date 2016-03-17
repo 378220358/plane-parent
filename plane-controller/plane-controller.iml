@@ -28,9 +28,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="module" module-name="plane-dao" />
-    <orderEntry type="module" module-name="plane-domain" />
     <orderEntry type="module" module-name="plane-service" />
+    <orderEntry type="module" module-name="plane-domain" />
+    <orderEntry type="module" module-name="plane-dao" />
     <orderEntry type="module" module-name="plane-util" />
     <orderEntry type="module" module-name="plane-cache" />
     <orderEntry type="module" module-name="plane-constant" />

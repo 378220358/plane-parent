@@ -11,9 +11,22 @@
     <result column="PLANE_INFO_ID" property="planeInfoId" jdbcType="INTEGER" />
     <result column="TICKET_POOL_SUM" property="ticketPoolSum" jdbcType="INTEGER" />
     <result column="TICKET_POOL_SALE" property="ticketPoolSale" jdbcType="INTEGER" />
-    <result column="TAKE_OFF_PLACE" property="takeOffPlace" jdbcType="INTEGER" />
-    <result column="TAKE_ON_PLACE" property="takeOnPlace" jdbcType="INTEGER" />
   </resultMap>
+  <resultMap id="AllPlanePool" type="com.chen.plane.domain.pojo.PlanePool" extends="BaseResultMap">
+    <result column="PLANE_START_PLACE" property="planeStartPlace" jdbcType="INTEGER" />
+    <result column="PLANE_END_PLACE" property="planeEndPlace" jdbcType="INTEGER" />
+    <result column="PLANE_START_TIME" property="planeStartTime"/>
+    <result column="PLANE_END_TIME" property="planeEndTime"/>
+  </resultMap>
+  <select id="getPlanePollByCondition" parameterType="com.chen.plane.domain.query.PlanePoolQueryObj" resultMap="AllPlanePool">
+    SELECT * FROM PLANE_POOL p LEFT JOIN PLANE_TICKET t ON p.PLANE_INFO_ID = t.PLANE_ID
+    WHERE
+    t.PLANE_START_PLACE = #{planeStartPlace}
+    <if test="planeEndPlace != null">
+      AND t.PLANE_END_PLACE = #{planeEndPlace}
+    </if>
+    AND t.PLANE_START_TIME = #{planeStartTime}
+  </select>
   <sql id="Example_Where_Clause" >
     <!--
       WARNING - @mbggenerated

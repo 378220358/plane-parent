@@ -7,14 +7,14 @@
           <element id="module-output" name="plane-controller" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="plane-dao-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="plane-dao" />
+          <element id="archive" name="plane-service-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="plane-service" />
           </element>
           <element id="archive" name="plane-domain-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="plane-domain" />
           </element>
-          <element id="archive" name="plane-service-0.0.1-SNAPSHOT.jar">
-            <element id="module-output" name="plane-service" />
+          <element id="archive" name="plane-dao-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="plane-dao" />
           </element>
           <element id="archive" name="plane-util-0.0.1-SNAPSHOT.jar">
             <element id="module-output" name="plane-util" />

@@ -7,7 +7,7 @@
 		<property name="includeUrls">
 			<list>
 				<value>/plane/user/*/(.*)</value>
-				<value>/plane/main/(.*)</value>
+				<value>/plane/ticket/(.*)</value>
 				<value>/modules/(.*)</value>
 				<value>/(/.index.jsp)</value>
 			</list>

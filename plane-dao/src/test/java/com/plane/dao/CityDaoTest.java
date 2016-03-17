@@ -1,7 +1,9 @@
 package com.plane.dao;
 
 import com.chen.plane.dao.CityDao;
+import com.chen.plane.dao.PlanePoolDao;
 import com.chen.plane.domain.pojo.City;
+import com.chen.plane.domain.pojo.PlanePool;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,8 @@ import java.util.List;
 public class CityDaoTest {
 	@Autowired
 	private CityDao cityDao;
+	@Autowired
+	private PlanePoolDao planePoolDao;
 	@Test
 	public void testCityDao(){
 		City city = new City();
@@ -29,5 +33,9 @@ public class CityDaoTest {
 		city.setCityName("沈阳");
 		cityList.add(city);
 		cityDao.addBathCity(cityList);
+	}
+	@Test
+	public void testPlaneDao(){
+
 	}
 }
