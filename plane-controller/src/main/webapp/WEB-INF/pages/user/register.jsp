@@ -8,33 +8,40 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/modules/common/jsp/taglibs.jsp"%>
 <html>
-<head>
+<>
     <title>用户注册界面</title>
     <link type="text/css" rel="stylesheet" href="<c:url value="/modules/common/css/com.css" />">
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/login.css"/> ">
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/bootstrap.css"/>">
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/bootstrap-theme.min.css"/>">
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/validate.css"/> ">
-    <script language="javascript" type="javascript" src="<c:url value="/modules/common/js/validate.js"/>"/>
-    <script type="javascript">
+    <script language="javascript" type="text/javascript" src="<c:url value="/modules/common/js/jquery-2.1.4.min.js"/>"></script>
+    <script type="text/javascript" language="javascript">
+
         function validateRegister(){
             var userName = $("#userName").val();
             var userPwd = $("#userPwd").val();
-            var userSurePwd = $("userSurePwd").val();
-            if(userName == null){
+            var userSurePwd = $("#userSurePwd").val();
+            var flag = true;
+            if($.trim(userName) == null || $.trim(userName) == ""){
                 alert("请输入用户名");
             }
-            if(userPwd == null){
+            if($.trim(userPwd) == null || $.trim(userPwd) == ""){
                 alert("请输入密码");
-                if(userSurePwd == null){
+                if($.trim(userSurePwd) == null || $.trim(userSurePwd) == ""){
                     alert("请再次输入密码");
                 }else{
-                    if(userPwd == userSurePwd){
-                        return true;
-                    }
+                    flag = true;
                 }
             }
-            return false;
+            return flag;
+        }
+        function surePwd(){
+            var userPwd = $("#userPwd").val();
+            var userSurePwd = $("#userSurePwd").val();
+            if(userPwd != userSurePwd){
+                alert("密码不一致，请重新输入");
+            }
         }
     </script>
 </head>
@@ -51,7 +58,10 @@
                 <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">快速注册</font></h3>
             </div>
             <div class="panel-body">
-                <form class="form-horizontal" method="post" action="/plane/user/register.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm" onsubmit="return validateRegister()">
+                <form class="form-horizontal" method="post" action="/plane/user/register.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm" onsubmit="return validateRegister()" >
+                    <c:if test="${error != null}">
+                        <span style="color: red">${error}</span>
+                    </c:if>
                     <div class="input-group">
                         <span class="input-group-addon">用&nbsp 户&nbsp&nbsp名：</span>
                         <input type="text" name="userName"  id="userName" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1">
@@ -63,8 +73,8 @@
                     </div>
                     <p></p>
                     <div class="input-group">
-                        <span class="input-group-addon" id="userSurePwd">确认密码：</span>
-                        <input type="password" class="form-control" placeholder="请再次输入密码" aria-describedby="basic-addon1">
+                        <span class="input-group-addon">确认密码：</span>
+                        <input type="password" id="userSurePwd" name="userSurePwd" class="form-control" placeholder="请再次输入密码" aria-describedby="basic-addon1" onblur="surePwd()">
                     </div>
                     <p></p>
                     <div>

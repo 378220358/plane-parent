@@ -188,6 +188,41 @@ public class User implements Serializable{
         this.accessTokenExpiryTime = accessTokenExpiryTime;
     }
 
+    @Override public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
+
+        User user = (User) o;
+
+        if (!userId.equals(user.userId))
+            return false;
+        if (!userName.equals(user.userName))
+            return false;
+        if (!userPwd.equals(user.userPwd))
+            return false;
+        if (!userIp.equals(user.userIp))
+            return false;
+        if (userTime != null ? !userTime.equals(user.userTime) : user.userTime != null)
+            return false;
+        if (accessToken != null ? !accessToken.equals(user.accessToken) : user.accessToken != null)
+            return false;
+        return !(accessTokenExpiryTime != null ? !accessTokenExpiryTime.equals(user.accessTokenExpiryTime) : user.accessTokenExpiryTime != null);
+
+    }
+
+    @Override public int hashCode() {
+        int result = userId.hashCode();
+        result = 31 * result + userName.hashCode();
+        result = 31 * result + userPwd.hashCode();
+        result = 31 * result + userIp.hashCode();
+        result = 31 * result + (userTime != null ? userTime.hashCode() : 0);
+        result = 31 * result + (accessToken != null ? accessToken.hashCode() : 0);
+        result = 31 * result + (accessTokenExpiryTime != null ? accessTokenExpiryTime.hashCode() : 0);
+        return result;
+    }
+
     @Override public String toString() {
         return "User{" +
                 "userId=" + userId +

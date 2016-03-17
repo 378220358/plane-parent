@@ -6,6 +6,7 @@ import com.chen.plane.service.UserService;
 import com.chen.plane.service.impl.UserServiceImpl;
 
 import com.chen.plane.util.json.JSONConvertUtil;
+import com.chen.plane.util.web.RequestUtil;
 import com.chen.plane.util.web.ResponseUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.apache.log4j.Logger;
@@ -85,11 +86,12 @@ public class UserLoginController extends BaseController{
 	 * @return
 	 */
 	@RequestMapping(value = "/register.do",method = RequestMethod.POST)
-	public String register(User user,HttpServletResponse response,ModelMap modelMap){
+	public String register(User user,HttpServletResponse response,ModelMap modelMap,HttpServletRequest request){
 		log.debug("UserLoginController.register>>>");
 		String registerUrl = "/user/login";
 		try {
-			if (user != null){
+			if (user.getUserName() != null && !user.getUserName().equals("") && user.getUserPwd() != null && !user.getUserPwd().equals("")){
+				user.setUserIp(RequestUtil.getRealIP(request));
 				userService.registerUser(user);
 			}else {
 				modelMap.put("error","您输入用户名和密码为空，请重新输入");
