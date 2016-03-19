@@ -13,6 +13,7 @@ public class PlanePoolQueryObj {
 	private String planeStartPlace;
 	private String planeEndPlace;
 	private Date startPlaneTime;
+	private String viewStartPlaneTime;
 
 	public String getPlaneStartPlace() {
 		return planeStartPlace;
@@ -38,11 +39,20 @@ public class PlanePoolQueryObj {
 		this.startPlaneTime = startPlaneTime;
 	}
 
+	public String getViewStartPlaneTime() {
+		return viewStartPlaneTime;
+	}
+
+	public void setViewStartPlaneTime(String viewStartPlaneTime) {
+		this.viewStartPlaneTime = viewStartPlaneTime;
+	}
+
 	@Override public String toString() {
 		return "PlanePoolQueryObj{" +
 				"planeStartPlace='" + planeStartPlace + '\'' +
 				", planeEndPlace='" + planeEndPlace + '\'' +
 				", startPlaneTime=" + startPlaneTime +
+				", viewStartPlaneTime='" + viewStartPlaneTime + '\'' +
 				'}';
 	}
 }

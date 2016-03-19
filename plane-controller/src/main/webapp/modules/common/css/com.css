@@ -36,5 +36,13 @@
     width: 200px;
     height: 140px;
     top: 25px;
-    left: 10%;
+    left: 20%;
 }
+.ticketList{
+    position: absolute;
+    width: 200px;
+    height: 140px;
+    top: 25px;
+    left: 45%;
+}
+.tab{border-collapse:collapse}

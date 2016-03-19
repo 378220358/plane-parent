@@ -55,29 +55,29 @@
   </div>
   </div>
   <div class="bodyCenter">
-    <div class="register">
+    <div class="ticket">
         <div class="panel panel-danger" style="width:300px;">
             <div class="panel-heading" >
                 <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">机票预订</font></h3>
             </div>
             <div class="panel-body">
-                <form class="form-horizontal" method="post" action="/plane/user/register.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm" onsubmit="return validateRegister()" >
+                <form class="form-horizontal" method="post" action="/plane/ticket/queryTicket.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm" onsubmit="return validateRegister()" >
                     <c:if test="${error != null}">
                         <span style="color: red">${error}</span>
                     </c:if>
                     <div class="input-group">
                         <span class="input-group-addon">出发城市：</span>
-                        <input type="text" name="startCity"  id="startCity" class="text state autocomplete" placeholder="请输入出发城市" aria-describedby="basic-addon1" autocomplete="off">
+                        <input type="text" name="planeStartPlace"  id="planeStartPlace" class="text state autocomplete" placeholder="请输入出发城市" aria-describedby="basic-addon1" autocomplete="off" value="${queryObj.planeStartPlace}">
                     </div>
                     <p></p>
                     <div class="input-group">
                         <span class="input-group-addon" >目的城市：</span>
-                        <input type="text" id="endCity" name="endCity" class="text state autocomplete" placeholder="请输入目的城市" aria-describedby="basic-addon1" autocomplete="off">
+                        <input type="text" id="planeEndPlace" name="planeEndPlace" class="text state autocomplete" placeholder="请输入目的城市" aria-describedby="basic-addon1" autocomplete="off" value="${queryObj.planeEndPlace}">
                     </div>
                     <p></p>
                     <div class="input-group">
                         <span class="input-group-addon">出发时间：</span>
-                        <input type="text" id="startTime" name="startTime" onfocus="WdatePicker({alwaysUseStartDate:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})"  class="text20 gray date medium" size="22">
+                        <input type="text" id="viewStartPlaneTime" name="viewStartPlaneTime" onfocus="WdatePicker({alwaysUseStartDate:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})"  class="text20 gray date medium" size="22" value="${queryObj.viewStartPlaneTime}">
                     </div>
                     <p></p>
                     <div>
@@ -90,6 +90,37 @@
             </div>
         </div>
     </div>
+    <c:if test="${ticketList != null}">
+        <div class="ticketList">
+            <c:forEach items="${ticketList}" var="ticket">
+                <div class="panel panel-danger" style="width:600px;">
+                    <div class="panel-heading" >
+                        <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">机票列表</font></h3>
+                    </div>
+                    <div class="panel-body">
+                        <table cellspacing="0" summary="" class="tab" id="pollTab">
+                            <thead>
+                                <th style="text-align:center;" width="4%">航班</th>
+                                <th style="text-align: center;" width="15%">航空公司</th>
+                                <th style="text-align:center;">出发时间</th>
+                                <th style="text-align:center;">到达时间</th>
+                                <th style="text-align:center;">订票</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="text-align:center;"><c:out value='${ticket.planeName}'/></td>
+                                    <td style="text-align:center;"><c:out value='${ticket.planeAirline}'/></td>
+                                    <td style="text-align:center;"><fmt:formatDate value="${ticket.planeStartTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                                    <td style="text-align:center;"><fmt:formatDate value="${ticket.planeEndTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                                    <td style="text-align:center;"><a href="/plane/ticket/selectSeat.do?ticketPoolId=${ticket.ticketPoolId}">订票</a> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </c:forEach>
+        </div>
+    </c:if>
   </div>
 </body>
 </html>

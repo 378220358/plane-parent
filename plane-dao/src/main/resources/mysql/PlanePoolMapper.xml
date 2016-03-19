@@ -17,15 +17,17 @@
     <result column="PLANE_END_PLACE" property="planeEndPlace" jdbcType="INTEGER" />
     <result column="PLANE_START_TIME" property="planeStartTime"/>
     <result column="PLANE_END_TIME" property="planeEndTime"/>
+    <result column="PLANE_NAME" property="planeName"/>
+    <result column="PLANE_AIRLINE" property="planeAirline"/>
   </resultMap>
   <select id="getPlanePollByCondition" parameterType="com.chen.plane.domain.query.PlanePoolQueryObj" resultMap="AllPlanePool">
     SELECT * FROM PLANE_POOL p LEFT JOIN PLANE_TICKET t ON p.PLANE_INFO_ID = t.PLANE_ID
     WHERE
-    t.PLANE_START_PLACE = #{planeStartPlace}
+    t.PLANE_START_PLACE = (SELECT c.CITY_ID FROM CITY c WHERE c.CITY_NAME = #{planeStartPlace})
     <if test="planeEndPlace != null">
-      AND t.PLANE_END_PLACE = #{planeEndPlace}
+      AND t.PLANE_END_PLACE = (SELECT c.CITY_ID FROM CITY c WHERE c.CITY_NAME = #{planeEndPlace})
     </if>
-    AND t.PLANE_START_TIME = #{planeStartTime}
+    AND t.PLANE_START_TIME &gt;= #{startPlaneTime}
   </select>
   <sql id="Example_Where_Clause" >
     <!--
