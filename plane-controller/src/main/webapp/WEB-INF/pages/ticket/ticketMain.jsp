@@ -50,8 +50,22 @@
 </head>
 <body>
 <div class="bodyTop" >
+    <c:choose>
+        <c:when test="${userInfo != null}">
+            <div class="userCenter">
+                <font color="#da70d6"><span>欢迎： <a href="/plane/user/userCenter.do">${userInfo.userName}</a> 来到纲纲订票系统 </span></font>
+            </div>
+        </c:when>
+        <c:otherwise>
+            <div class="userCenter">
+                <font color="#da70d6"><span>欢迎<a href="/plane/user/index.do" >登录</a></span></font>
+            </div>
+        </c:otherwise>
+    </c:choose>
   <div class="menu">
-    <a>机票预订</a>
+    <a>机票预订</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      <a href="/plane/user/userCenter.do">用户中心</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+      <a>订单中心</a>
   </div>
   </div>
   <div class="bodyCenter">

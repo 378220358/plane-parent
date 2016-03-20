@@ -56,7 +56,7 @@ public class BaseController {
 			user.setAccessTokenExpiryTime(accessTokenExpiryTime);
 			log.debug("loginName is:" + loginName + ",accessToken is:" + accessToken + ",accessTokenExpiryTime is:" + accessTokenExpiryTimeStr);
 			// 设置Cookie
-			String cookieValue = "{'" + UserLoginConstant.USER_LOGIN_FLAG + "':'" + loginName + "','" + UserLoginConstant.ACCESS_TOKEN_FLAG + "':'" + accessToken + "','accessTokenExpiryTime':'" + accessTokenExpiryTimeStr + "'}";
+			String cookieValue = "{'"+ "userId" + "':'" + user.getUserId() + "','" + UserLoginConstant.USER_LOGIN_FLAG + "':'" + loginName + "','" + UserLoginConstant.USER_LOGIN_FLAG + "':'" + loginName + "','" + UserLoginConstant.ACCESS_TOKEN_FLAG + "':'" + accessToken + "','accessTokenExpiryTime':'" + accessTokenExpiryTimeStr + "'}";
 			Cookie cookie = new Cookie(UserLoginConstant.COOKIE_KEY, URLEncoder.encode(cookieValue));
 			cookie.setMaxAge(UserLoginConstant.COOKIE_AVAILABLE_TIME_LONG);
 			cookie.setPath(UserLoginConstant.COOKIE_PATH);
@@ -139,11 +139,15 @@ public class BaseController {
 				if (StringUtils.isNotEmpty(cookieValue)) {
 					HashMap<String, Object> hashMap = JSON.parseObject(cookieValue, HashMap.class);
 					String loginName = (String) hashMap.get(UserLoginConstant.USER_LOGIN_FLAG);
+					Integer userId = (Integer) hashMap.get("userId");
 					log.debug("get loginName from cookieValue:" + loginName);
-					Map<Object, Object> loginUserMap = redisClient.getHashMap(UserLoginConstant.REDIS_LOGIN_MAP_KEY);
-					if (loginUserMap != null) {
-						user = (User) MapUtils.getObject(loginUserMap, loginName);
-					}
+//					Map<Object, Object> loginUserMap = redisClient.getHashMap(UserLoginConstant.REDIS_LOGIN_MAP_KEY);
+//					if (loginUserMap != null) {
+//						user = (User) MapUtils.getObject(loginUserMap, loginName);
+//					}
+					user = new User();
+					user.setUserName(loginName);
+					user.setUserId(userId);
 				}
 				break;
 			} else {

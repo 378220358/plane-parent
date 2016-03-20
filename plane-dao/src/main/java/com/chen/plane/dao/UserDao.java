@@ -22,4 +22,10 @@ public interface UserDao {
 	 * @param user
 	 */
 	void registerUser(User user);
+
+	/**
+	 * 更新用户信息
+	 * @param user
+	 */
+	void updateUser(User user);
 }

@@ -27,4 +27,10 @@ public class UserDaoMybatis extends BaseDaoMyBatis implements UserDao {
 		getSqlSession().insert(NAMESPACE + "insertSelective" ,user);
 		log.debug("UserDaoMybatis.registerUser<<<");
 	}
+
+	@Override public void updateUser(User user) {
+		log.debug("UserDaoMybatis.updateUser>>>");
+		getSqlSession().update(NAMESPACE + "updateByPrimaryKeySelective", user);
+		log.debug("UserDaoMybatis.updateUser<<<");
+	}
 }

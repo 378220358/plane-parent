@@ -1,6 +1,7 @@
 package com.chen.plane.constant.user;
 
 /**
+ * 用户登录相关常量
  * </p>Copyright(c)	Devlopment Dept/XiaoFang All Rights Reserved</p>
  *
  * @author ouyangzhao(ouyangzhao@66xf.com)

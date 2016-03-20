@@ -30,4 +30,10 @@ public class UserServiceImpl implements UserService {
 		userDao.registerUser(user);
 		log.debug("UserServiceImpl.registerUser<<<");
 	}
+
+	@Override public void updateUser(User user) {
+		log.debug("UserServiceImpl.updateUser>>>");
+		userDao.updateUser(user);
+		log.debug("UserServiceImpl.updateUser<<<");
+	}
 }
