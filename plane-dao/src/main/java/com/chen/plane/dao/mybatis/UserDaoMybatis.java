@@ -33,4 +33,11 @@ public class UserDaoMybatis extends BaseDaoMyBatis implements UserDao {
 		getSqlSession().update(NAMESPACE + "updateByPrimaryKeySelective", user);
 		log.debug("UserDaoMybatis.updateUser<<<");
 	}
+
+	@Override public User getUserInfoById(User user) {
+		log.debug("UserDaoMybatis.getUserInfoById>>>");
+		User user1 = getSqlSession().selectOne(NAMESPACE + "getUserInfoById", user);
+		log.debug("UserDaoMybatis.getUserInfoById<<<");
+		return user1;
+	}
 }

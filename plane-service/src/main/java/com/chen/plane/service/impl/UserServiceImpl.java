@@ -36,4 +36,11 @@ public class UserServiceImpl implements UserService {
 		userDao.updateUser(user);
 		log.debug("UserServiceImpl.updateUser<<<");
 	}
+
+	@Override public User getUserInfoById(User user) {
+		log.debug("UserServiceImpl.getUserInfoById>>>");
+		User user1 = userDao.getUserInfoById(user);
+		log.debug("UserServiceImpl.getUserInfoById<<<");
+		return user1;
+	}
 }

@@ -26,7 +26,7 @@ public class UserLoginConstant {
 	/**
 	 * Redis中后台登录相关信息key
 	 */
-	public static final String REDIS_LOGIN_MAP_KEY = "consoleLoginMap";
+	public static final String REDIS_LOGIN_MAP_KEY = "LoginMap";
 
 	/**
 	 * 用户登录标记

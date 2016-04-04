@@ -139,12 +139,13 @@ public class BaseController {
 				if (StringUtils.isNotEmpty(cookieValue)) {
 					HashMap<String, Object> hashMap = JSON.parseObject(cookieValue, HashMap.class);
 					String loginName = (String) hashMap.get(UserLoginConstant.USER_LOGIN_FLAG);
-					Integer userId = (Integer) hashMap.get("userId");
+					log.debug("userId : " + hashMap.get("userId"));
+					Integer userId = Integer.valueOf((String)hashMap.get("userId"));
 					log.debug("get loginName from cookieValue:" + loginName);
-//					Map<Object, Object> loginUserMap = redisClient.getHashMap(UserLoginConstant.REDIS_LOGIN_MAP_KEY);
-//					if (loginUserMap != null) {
-//						user = (User) MapUtils.getObject(loginUserMap, loginName);
-//					}
+					Map<Object, Object> loginUserMap = redisClient.getHashMap(UserLoginConstant.REDIS_LOGIN_MAP_KEY);
+					if (loginUserMap != null) {
+						user = (User) MapUtils.getObject(loginUserMap, loginName);
+					}
 					user = new User();
 					user.setUserName(loginName);
 					user.setUserId(userId);

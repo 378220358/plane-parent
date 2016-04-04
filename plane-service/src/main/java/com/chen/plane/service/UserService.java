@@ -28,4 +28,11 @@ public interface UserService {
 	 * @param user
 	 */
 	void updateUser(User user);
+
+	/**
+	 * 根据用户ID获得用户信息
+	 * @param user
+	 * @return
+	 */
+	 User getUserInfoById(User user);
 }

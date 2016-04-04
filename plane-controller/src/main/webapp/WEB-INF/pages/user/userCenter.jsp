@@ -17,6 +17,34 @@
   <link rel="stylesheet" type="text/css" media="all" href="<c:url value='/modules/common/css/jquery.autocomplete.css'/>" />
   <script type="text/javascript" src="<c:url value="/modules/common/My97DatePicker/WdatePicker.js"/> "></script>
   <script type="text/javascript" src="<c:url value="/modules/common/js/jquery-2.1.4.min.js"/> "></script>
+  <script type="text/javascript" language="javascript">
+
+    function validateRegister(){
+      var userName = $("#userName").val();
+      var userPwd = $("#userPwd").val();
+      var userSurePwd = $("#userSurePwd").val();
+      var flag = true;
+      if($.trim(userName) == null || $.trim(userName) == ""){
+        alert("请输入用户名");
+      }
+      if($.trim(userPwd) == null || $.trim(userPwd) == ""){
+        alert("请输入密码");
+        if($.trim(userSurePwd) == null || $.trim(userSurePwd) == ""){
+          alert("请再次输入密码");
+        }else{
+          flag = true;
+        }
+      }
+      return flag;
+    }
+    function surePwd(){
+      var userPwd = $("#userPwd").val();
+      var userSurePwd = $("#userSurePwd").val();
+      if(userPwd != userSurePwd){
+        alert("密码不一致，请重新输入");
+      }
+    }
+  </script>
 </head>
 <body>
 <div class="bodyTop" >
@@ -38,15 +66,40 @@
         <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">用户中心</font></h3>
       </div>
       <div class="panel-body">
+        <form action="/plane/user/updateUser.do" onsubmit="return validateRegister()" method="post">
+          <input type="hidden" name="userId" value="${userInfo.userId}">
         <div class="input-group">
           <span class="input-group-addon">用&nbsp 户&nbsp&nbsp名：</span>
           <input type="text" name="userName" readonly id="userName" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="${userInfo.userName}">
         </div>
+          <p></p>
+          <div class="input-group">
+            <span class="input-group-addon">用&nbsp 户&nbsp&nbspIP：</span>
+            <input type="text" name="userName" readonly id="userIp" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="${userInfo.userIp}">
+          </div>
+          <p></p>
+          <div class="input-group">
+            <span class="input-group-addon">登录时间：</span>
+            <input type="text" name="userTime" readonly id="userTime" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="${userInfo.userTime}">
+          </div>
         <p></p>
         <div class="input-group">
           <span class="input-group-addon" >密&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp码：</span>
           <input type="password" id="userPwd" name="userPwd" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon1" value="${userInfo.userPwd}">
         </div>
+        <p></p>
+        <div class="input-group">
+          <span class="input-group-addon" >确认密码：</span>
+          <input type="password" id="userSurePwd" name="userSurePwd" class="form-control" placeholder="请输入密码" aria-describedby="basic-addon1" value="${userInfo.userPwd}">
+        </div>
+        <p></p>
+        <div>
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          <button type="submit" class="btn btn-primary" id="registerSubmit">修改密码</button>
+          &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          <button type="reset" class="btn btn-primary" id="reset">重置</button>
+        </div>
+        </form>
       </div>
     </div>
   </div>

@@ -59,7 +59,7 @@ public class UserController extends BaseController{
 		}
 		User user1 = userService.getUserById(user);
 		if (user1 != null) {
-			cacheUserLoginState(user,response);
+			cacheUserLoginState(user1,response);
 			modelMap.addAttribute("userInfo", user1);
 			returnUrl =  "/ticket/ticketMain";
 		} else {
@@ -111,10 +111,11 @@ public class UserController extends BaseController{
 	 * @return
 	 */
 	@RequestMapping(value = "/userCenter.do",method = RequestMethod.GET)
-	public String userCenter(ModelMap modelMap,HttpServletRequest request){
+	public String userCenter(ModelMap modelMap,HttpServletRequest request,User user){
 		log.debug("UserController.userCenter>>>");
-		User user = getUserWithNotLoginException(request);
-		user = userService.getUserById(user);
+		log.debug("user:" + user);
+		user = userService.getUserInfoById(user);
+		log.debug("userAfter:" + user);
 		modelMap.addAttribute("userInfo",user);
 		log.debug("UserController.userCenter<<<");
 		return "/user/userCenter";
@@ -129,8 +130,10 @@ public class UserController extends BaseController{
 	@RequestMapping(value = "/updateUser.do",method = RequestMethod.POST)
 	public String updateUser(ModelMap modelMap,User user){
 		log.debug("UserController.updateUser<<<");
+		log.debug("user : "+ user);
 		try {
 			userService.updateUser(user);
+			modelMap.addAttribute("userInfo",user);
 		}catch (Exception e){
 			e.printStackTrace();
 			log.debug("更新用户信息处异常啦！ error：" + e.getMessage());

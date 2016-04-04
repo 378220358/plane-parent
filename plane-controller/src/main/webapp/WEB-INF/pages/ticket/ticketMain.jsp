@@ -53,7 +53,7 @@
     <c:choose>
         <c:when test="${userInfo != null}">
             <div class="userCenter">
-                <font color="#da70d6"><span>欢迎： <a href="/plane/user/userCenter.do">${userInfo.userName}</a> 来到纲纲订票系统 </span></font>
+                <font color="#da70d6"><span>欢迎： <a href="/plane/user/userCenter.do?userName=${userInfo.userName}&userId=${userInfo.userId}">${userInfo.userName}</a> 来到纲纲订票系统 </span></font>
             </div>
         </c:when>
         <c:otherwise>
