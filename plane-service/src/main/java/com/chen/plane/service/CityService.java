@@ -16,4 +16,10 @@ public interface CityService {
 	 * @return
 	 */
 	List<City> getAllCity();
+
+	/**
+	 * 增加城市
+	 * @param city
+	 */
+	void addCity(City city);
 }

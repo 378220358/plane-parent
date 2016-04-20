@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,4 +32,17 @@ public class CityServiceImpl implements CityService {
 		log.debug("CityServiceImpl.getAllCity<<<");
 		return cityList;
 	}
+
+	/**
+	 * 增加城市
+	 * @param city
+	 */
+	@Override public void addCity(City city) {
+		log.debug("CityServiceImpl.addCity>>>");
+		List<City> cityList = new ArrayList<City>();
+		cityList.add(city);
+		cityDao.addBathCity(cityList);
+		log.debug("CityServiceImpl.addCity<<<");
+	}
+
 }

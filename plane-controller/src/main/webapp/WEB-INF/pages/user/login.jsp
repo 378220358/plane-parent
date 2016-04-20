@@ -37,7 +37,7 @@
 <div style="width:670px; height:550px; position:absolute; top:30%; left:55%;">
   <div class="panel panel-danger" style="width:400px;">
     <div class="panel-heading" >
-      <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">登录界面</font></h3>
+      <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">用户登录界面</font></h3>
     </div>
     <div class="panel-body">
       <form class="form-horizontal" method="post" action="/plane/user/login.do" enctype="application/x-www-form-urlencoded" role="form" id="myForm">

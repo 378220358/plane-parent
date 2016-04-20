@@ -111,7 +111,7 @@
     });
 
     //let's pretend some seats have already been booked
-    sc.get(['1_2', '4_1', '7_1', '7_2']).status('unavailable');
+    sc.get(['1,2', '4,1', '7,1', '7,s2']).status('unavailable');
 
   });
 

@@ -8,6 +8,7 @@
 			<list>
 				<value>/plane/user/*/(.*)</value>
 				<value>/plane/ticket/(.*)</value>
+				<value>/plane/admin/(.*)</value>
 				<value>/modules/(.*)</value>
 				<value>/(/.index.jsp)</value>
 			</list>
