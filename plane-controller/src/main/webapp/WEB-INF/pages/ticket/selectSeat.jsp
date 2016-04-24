@@ -18,12 +18,18 @@
       <div class="front-indicator">机头</div>
     </div>
     <div class="booking-details">
-      <h3>已选中的座位 (<span id="counter">0</span>):</h3>
-      <ul id="selected-seats">
-      </ul>
-      <p>总价: <b>$<span id="total">0</span></b></p>
-      <p><button class="checkout-button">结算</button></p>
-      <div id="legend"></div>
+      <form action="/plane/ticket/seatAccount.do" method="post">
+        <input type="hidden" name="cabinAleardySeat" id="cabinAleardySeat" value="${cabinInfo.cabinAleardySeat}">
+        <input type="hidden" name="cabinId" id="cabinId" value="${cabinInfo.cabinId}">
+        <h3>已选中的座位 (<span id="counter">0</span>):</h3>
+        <ul id="selected-seats">
+        </ul>
+        <p>姓　　　名：<b><input type="text" name="ticketName"></b></p>
+        <p>身份证号码：<b><input type="text" name="ticketCard"></b></p>
+        <p>总　　　价: <b>$<input id="total" name="ticketMoney" readonly style="border-style:none;color:#808080" ></b></p>
+        <p><button class="checkout-button" onclick="">结算</button></p>
+        <div id="legend"></div>
+      </form>
     </div>
   </div>
 </div>
@@ -76,12 +82,22 @@
               },
               click: function () {
                 if (this.status() == 'available') {
+                  var tempRow = this.settings.row + 1;
+                  var tempColumn = this.settings.column + 1;
+                  if(parseInt(tempColumn) > 2 && parseInt(this.settings.row) != 10){
+                    tempColumn --;
+
+                  }
+                  var tempSeat = $("#cabinAleardySeat").val() + ",'" + tempRow + "_" + tempColumn + "'";
+                  $("#cabinAleardySeat").val(tempSeat);
+                  console.log($("#cabinAleardySeat").val());
                   $('<li>'+this.data().category+this.settings.label+'号座位'+'：<br/>价格：<b>$'+this.data().price+'</b> <a href="#" class="cancel-cart-item">[删除]</a></li>')
                           .attr('id','cart-item-'+this.settings.id)
                           .data('seatId', this.settings.id)
                           .appendTo($cart);
                   $counter.text(sc.find('selected').length+1);
-                  $total.text(recalculateTotal(sc)+this.data().price);
+                  $("#total").val(recalculateTotal(sc)+this.data().price);
+                 // $total.text(recalculateTotal(sc)+this.data().price);
 
                   return 'selected';
                 } else if (this.status() == 'selected') {
@@ -111,7 +127,10 @@
     });
 
     //let's pretend some seats have already been booked
-    sc.get(['1,2', '4,1', '7,1', '7,s2']).status('unavailable');
+    //sc.get(['1_2', '4_1', '7_1', '7_2']).status('unavailable');
+    <c:if test="${cabinInfo != null}">
+    sc.get([${cabinInfo.cabinAleardySeat}]).status('unavailable');
+    </c:if>
 
   });
 

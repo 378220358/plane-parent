@@ -1,6 +1,8 @@
 package com.chen.plane.service;
 
+import com.chen.plane.domain.pojo.PlaneFirst;
 import com.chen.plane.domain.pojo.PlanePool;
+import com.chen.plane.domain.pojo.Ticket;
 import com.chen.plane.domain.query.PlanePoolQueryObj;
 
 import java.util.List;
@@ -19,4 +21,30 @@ public interface TicketService {
 	 * @return
 	 */
 	List<PlanePool> getPlanePollByCondition(PlanePoolQueryObj planePoolQueryObj);
+
+	/**
+	 * 获得飞机舱室售卖信息
+	 * @param id
+	 * @return
+	 */
+	PlaneFirst getPlaneFirst(Integer id);
+
+	/**
+	 * 更新飞机售卖信息
+	 * @param planeFirst
+	 */
+	void updatePlaneFirst(PlaneFirst planeFirst);
+
+	/**
+	 * 增加订单信息
+	 * @param ticket
+	 */
+	void  addTicket(PlaneFirst ticket,String ip);
+
+	/**
+	 * 根据用户信息获得订单列表
+	 * @param ticket
+	 * @return
+	 */
+ 	List<Ticket> getTicketByUser(Ticket ticket);
 }

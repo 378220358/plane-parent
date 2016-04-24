@@ -301,4 +301,11 @@
       CABIN_ALEARDY_SEAT = #{cabinAleardySeat,jdbcType=VARCHAR}
     where CABIN_ID = #{cabinId,jdbcType=INTEGER}
   </update>
+  <select id="getPlaneFirstById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select * from plane_first pf
+    <where>
+      pf.CABIN_ID = #{planeFirstId}
+    </where>
+    limit 1;
+  </select>
 </mapper>

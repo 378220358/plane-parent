@@ -16,6 +16,7 @@
     <result column="USER_ID" property="userId" jdbcType="INTEGER" />
     <result column="TICKET_IP" property="ticketIp" jdbcType="VARCHAR" />
     <result column="TICKET_NUMBER" property="ticketNumber" jdbcType="VARCHAR" />
+    <result column="TICKET_MONEY" property="ticketMoney"/>
   </resultMap>
   <sql id="Example_Where_Clause" >
     <!--
@@ -152,11 +153,11 @@
     -->
     insert into ticket (TICKET_ID, TICKET_NAME, TICKET_CARD, 
       TICKET_TIME, PAY_ID, TICKET_STATUE, 
-      USER_ID, TICKET_IP, TICKET_NUMBER
+      USER_ID, TICKET_IP, TICKET_NUMBER, TICKET_MONEY
       )
     values (#{ticketId,jdbcType=INTEGER}, #{ticketName,jdbcType=VARCHAR}, #{ticketCard,jdbcType=VARCHAR}, 
       #{ticketTime,jdbcType=TIMESTAMP}, #{payId,jdbcType=INTEGER}, #{ticketStatue,jdbcType=INTEGER}, 
-      #{userId,jdbcType=INTEGER}, #{ticketIp,jdbcType=VARCHAR}, #{ticketNumber,jdbcType=VARCHAR}
+      #{userId,jdbcType=INTEGER}, #{ticketIp,jdbcType=VARCHAR}, #{ticketNumber,jdbcType=VARCHAR},#{ticketMoney}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.chen.plane.domain.pojo.Ticket" >
@@ -348,4 +349,10 @@
       TICKET_NUMBER = #{ticketNumber,jdbcType=VARCHAR}
     where TICKET_ID = #{ticketId,jdbcType=INTEGER}
   </update>
+  <select id="getTicketByUser" parameterType="com.chen.plane.domain.pojo.Ticket" resultMap="BaseResultMap">
+    select * from TICKET t
+    <where>
+      t.USER_ID = #{userId}
+    </where>
+  </select>
 </mapper>

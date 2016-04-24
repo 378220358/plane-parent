@@ -44,6 +44,6 @@ public class CityController {
 			appServerResult = AppServerResult.generateFailureResult();
 		}
 		log.debug("CityController.getAllCity<<<");
-		return null;
+		return "/admin/adminMain";
 	}
 }

@@ -126,7 +126,7 @@
                                     <td style="text-align:center;"><c:out value='${ticket.planeAirline}'/></td>
                                     <td style="text-align:center;"><fmt:formatDate value="${ticket.planeStartTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
                                     <td style="text-align:center;"><fmt:formatDate value="${ticket.planeEndTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
-                                    <td style="text-align:center;"><a href="/plane/ticket/selectSeat.do?ticketPoolId=${ticket.ticketPoolId}">订票</a> </td>
+                                    <td style="text-align:center;"><a href="/plane/ticket/selectSeat.do?ticketPoolId=${ticket.ticketPoolId}&cabinId=${ticket.ticketPoolId}">订票</a> </td>
                                 </tr>
                             </tbody>
                         </table>

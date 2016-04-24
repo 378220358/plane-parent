@@ -1,15 +1,14 @@
 package com.plane.dao;
 
-import com.chen.plane.dao.CityDao;
-import com.chen.plane.dao.PlanePoolDao;
-import com.chen.plane.domain.pojo.City;
-import com.chen.plane.domain.pojo.PlanePool;
+import com.chen.plane.dao.*;
+import com.chen.plane.domain.pojo.*;
 import com.chen.plane.domain.query.PlanePoolQueryObj;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import sun.security.krb5.internal.PAData;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -30,6 +29,43 @@ public class CityDaoTest {
 	private CityDao cityDao;
 	@Autowired
 	private PlanePoolDao planePoolDao;
+	@Autowired
+	private PlaneFirstDao planeFirstDao;
+	@Autowired
+	private TicketDao ticketDao;
+	@Autowired
+	private PAYDao payDao;
+	@Test
+	public void testAddPAYDao(){
+		PAY pay = new PAY();
+		pay.setPayIp("127.0.0.1");
+		pay.setPayMoney(23.3);
+		pay.setPayStatue(0);
+		payDao.addPAYDao(pay);
+		System.out.println(pay.getPayId());
+	}
+	@Test
+	public void testAddTicket(){
+		Ticket ticket = new Ticket();
+		ticket.setTicketIp("127.0.0.1");
+		ticket.setTicketName("Å·Ñô");
+		ticket.setTicketCard("3622011994015555");
+		ticket.setTicketNumber("123456789oy");
+		ticket.setUserId(1);
+		ticket.setTicketMoney(23.3);
+		ticketDao.addTicket(ticket);
+	}
+	@Test
+	public void testGetPlaneFirst(){
+		System.out.println(planeFirstDao.getPlaneFirstById(1));
+	}
+	@Test
+	public void testUpdatePlaneFirst(){
+		PlaneFirst planeFirst = new PlaneFirst();
+		planeFirst.setCabinId(1);
+		planeFirst.setCabinAleardySeat("1_1,2_2,7_1,7_3,4_2,2_1");
+		planeFirstDao.updatePlaneFirstById(planeFirst);
+	}
 	@Test
 	public void testCityDao(){
 		City city = new City();

@@ -20,30 +20,21 @@
   <script type="text/javascript" language="javascript">
 
     function validateRegister(){
-      var userName = $("#userName").val();
-      var userPwd = $("#userPwd").val();
+      var cityName = $("#cityName").val();
+      var cityCode = $("#cityCode").val();
       var userSurePwd = $("#userSurePwd").val();
       var flag = true;
-      if($.trim(userName) == null || $.trim(userName) == ""){
-        alert("请输入用户名");
+      if($.trim(cityName) == null || $.trim(cityName) == ""){
+        flag = false;
+        alert("请输入城市名称");
       }
-      if($.trim(userPwd) == null || $.trim(userPwd) == ""){
-        alert("请输入密码");
-        if($.trim(userSurePwd) == null || $.trim(userSurePwd) == ""){
-          alert("请再次输入密码");
-        }else{
-          flag = true;
-        }
+      if($.trim(cityCode) == null || $.trim(cityCode) == ""){
+        flag = false;
+        alert("请输入城市编码");
       }
       return flag;
     }
-    function surePwd(){
-      var userPwd = $("#userPwd").val();
-      var userSurePwd = $("#userSurePwd").val();
-      if(userPwd != userSurePwd){
-        alert("密码不一致，请重新输入");
-      }
-    }
+
   </script>
 </head>
 <body>
@@ -66,12 +57,12 @@
           <input type="hidden" name="userId" value="${userInfo.userId}">
         <div class="input-group">
           <span class="input-group-addon">开通城市：</span>
-          <input type="text" name="cityName"  id="userName" class="form-control" placeholder="请输入城市名称" aria-describedby="basic-addon1" value="${userInfo.userName}">
+          <input type="text" name="cityName"  id="cityName" class="form-control" placeholder="请输入城市名称" aria-describedby="basic-addon1" value="${userInfo.userName}">
         </div>
           <p></p>
           <div class="input-group">
             <span class="input-group-addon">城市编码：</span>
-            <input type="text" name="cityCode" id="u" class="form-control" placeholder="请输入城市编码" aria-describedby="basic-addon1" value="${userInfo.userName}">
+            <input type="text" name="cityCode" id="cityCode" class="form-control" placeholder="请输入城市编码" aria-describedby="basic-addon1" value="${userInfo.userName}">
           </div>
         <p></p>
         <div>
