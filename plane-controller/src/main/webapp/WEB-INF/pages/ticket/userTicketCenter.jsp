@@ -52,10 +52,10 @@
     </div>
   </div>
   <div class="bodyCenter">
-    <div class="register">
+    <div class="userTicketCenter">
         <div class="panel panel-danger" style="width:400px;">
             <div class="panel-heading" >
-                <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">订单<中心/font></h3>
+                <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">订单中心</font></h3>
             </div>
             <div class="panel-body">
                 <table cellspacing="0" summary="" class="tab" id="pollTab">

@@ -53,3 +53,10 @@
     top: 80px;
     left: 80%;
 }
+.userTicketCenter{
+    position: absolute;
+    width: 400px;
+    height: 640px;
+    top: 25px;
+    left: 60px;
+}

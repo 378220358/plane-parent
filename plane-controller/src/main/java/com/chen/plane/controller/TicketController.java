@@ -109,7 +109,7 @@ public class TicketController extends BaseController{
 			e.printStackTrace();
 		}
 		log.debug("TicketController.seatAccount<<<");
-		return "/user/userTicketCenter";
+		return "/ticket/userTicketCenter";
 	}
 
 	/**
