@@ -55,9 +55,11 @@
                 <font color="#da70d6"><span>欢迎： admin登录陈刚刚飞机售票管理系统 </span></font>
             </div>
 
-  <div class="menu">
-
-  </div>
+    <div class="menu">
+        <a href="/plane/admin/addPlaneTicketIndex.do">后台首页</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="/plane/admin/addCityIndex.do">开通城市</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="/plane/admin/addPlaneTicketIndex.do">增加航班信息</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    </div>
   </div>
   <div class="bodyCenter">
     <div class="register">
@@ -71,7 +73,7 @@
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                         <a href="/plane/admin/addCityIndex.do"> <button type="button" class="btn btn-primary" id="registerSubmit">开通城市</button></a>
                         &nbsp &nbsp &nbsp &nbsp &nbsp
-                        <button type="button" class="btn btn-primary" id="reset">增加航班</button>
+                        <a href="/plane/admin/addPlaneTicketIndex.do"> <button type="button" class="btn btn-primary" id="reset">增加航班</button></a>
                     </div>
                 </form>
             </div>

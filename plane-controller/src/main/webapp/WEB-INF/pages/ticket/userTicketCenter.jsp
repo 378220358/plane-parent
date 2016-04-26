@@ -47,12 +47,14 @@
 </head>
 <body>
   <div class="bodyTop" >
-    <div class="menu">
-        <a>首页</a>
-    </div>
+      <div class="menu">
+          <a href="/plane/ticket/ticketMain.do">机票预订</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          <a href="/plane/user/userCenter.do">用户中心</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+          <a href="/plane/ticket/userTicketCenter.do">订单中心</a>
+      </div>
   </div>
   <div class="bodyCenter">
-    <div class="userTicketCenter">
+    <div class="register">
         <div class="panel panel-danger" style="width:400px;">
             <div class="panel-heading" >
                 <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">订单中心</font></h3>
@@ -60,8 +62,8 @@
             <div class="panel-body">
                 <table cellspacing="0" summary="" class="tab" id="pollTab">
                     <thead>
-                        <th style="text-align:center;" width="4%">姓名</th>
-                        <th style="text-align: center;" width="15%">身份证号码</th>
+                        <th style="text-align:center;">姓名</th>
+                        <th style="text-align: center;">身份证号码</th>
                         <th style="text-align:center;">订单时间</th>
                         <th style="text-align:center;">订单IP</th>
                         <th style="text-align:center;">订单金额</th>

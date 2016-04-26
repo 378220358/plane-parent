@@ -65,7 +65,7 @@
   <div class="menu">
     <a>机票预订</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
       <a href="/plane/user/userCenter.do">用户中心</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-      <a>订单中心</a>
+      <a href="/plane/ticket/userTicketCenter.do">订单中心</a>
   </div>
   </div>
   <div class="bodyCenter">

@@ -1,13 +1,7 @@
 package com.chen.plane.service.impl;
 
-import com.chen.plane.dao.PAYDao;
-import com.chen.plane.dao.PlaneFirstDao;
-import com.chen.plane.dao.PlanePoolDao;
-import com.chen.plane.dao.TicketDao;
-import com.chen.plane.domain.pojo.PAY;
-import com.chen.plane.domain.pojo.PlaneFirst;
-import com.chen.plane.domain.pojo.PlanePool;
-import com.chen.plane.domain.pojo.Ticket;
+import com.chen.plane.dao.*;
+import com.chen.plane.domain.pojo.*;
 import com.chen.plane.domain.query.PlanePoolQueryObj;
 import com.chen.plane.service.TicketService;
 import com.chen.plane.util.Random.RandomUtils;
@@ -34,6 +28,12 @@ public class TicketServiceImpl implements TicketService {
 	private TicketDao ticketDao;
 	@Autowired
 	private PAYDao payDao;
+	@Autowired
+	private PlaneTicketDao planeTicketDao;
+	@Autowired
+	private CityDao cityDao;
+	@Autowired
+	private PlaneInfoDao planeInfoDao;
 	/**
 	 * 根据条件获得机票池列表
 	 * @param planePoolQueryObj
@@ -103,6 +103,25 @@ public class TicketServiceImpl implements TicketService {
 		List<Ticket> ticketList = ticketDao.getTicketByUser(ticket);
 		log.debug("TicketServiceImpl.getTicketByUser<<<");
 		return ticketList;
+	}
+
+	/**
+	 * 增加机票信息
+	 * @param planeTicket
+	 */
+	@Override public void addPlaneTicket(PlaneTicket planeTicket) {
+		log.debug("TicketServiceImpl.addPlaneTicket>>>");
+		planeTicket.setPlaneStartPlace(cityDao.getCityIdByCityName(planeTicket.getPlaneStartPlaceName()));
+		planeTicket.setPlaneEndPlace(cityDao.getCityIdByCityName(planeTicket.getPlaneEndPlaceName()));
+		PlaneFirst planeFirst = new PlaneFirst();
+		planeFirst.setCabinOneSum(1);
+		planeFirstDao.addPlaneFirst(planeFirst);
+		PlaneInfo planeInfo = new PlaneInfo();
+		planeInfo.setPlaneFirstId(planeFirst.getCabinId());
+		planeInfoDao.addPlaneInfo(planeInfo);
+		planeTicket.setPlaneId(planeInfo.getPlaneInfoId());
+		planeTicketDao.addPlaneTicket(planeTicket);
+		log.debug("TicketServiceImpl.addPlaneTicket<<<");
 	}
 
 }

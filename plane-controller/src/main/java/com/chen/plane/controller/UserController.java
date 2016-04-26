@@ -113,8 +113,9 @@ public class UserController extends BaseController{
 	@RequestMapping(value = "/userCenter.do",method = RequestMethod.GET)
 	public String userCenter(ModelMap modelMap,HttpServletRequest request,User user){
 		log.debug("UserController.userCenter>>>");
-		log.debug("user:" + user);
-		user = userService.getUserInfoById(user);
+		User user1 = getUserWithNotLoginException(request);
+		log.debug("user:" + user1);
+		user = userService.getUserInfoById(user1);
 		log.debug("userAfter:" + user);
 		modelMap.addAttribute("userInfo",user);
 		log.debug("UserController.userCenter<<<");

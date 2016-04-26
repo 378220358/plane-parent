@@ -30,4 +30,11 @@ public class CityDaoMybatis extends BaseDaoMyBatis implements CityDao{
 		getSqlSession().insert(NAMESPACE + "addBathCity", cityList);
 		log.debug("CityDaoMybatis.addBathCity<<<");
 	}
+
+	@Override public Integer getCityIdByCityName(String cityName) {
+		log.debug("CityDaoMybatis.getCityIdByCityName>>>");
+		Integer cityId = getSqlSession().selectOne(NAMESPACE + "getCityIdByCityName", cityName);
+		log.debug("CityDaoMybatis.getCityIdByCityName<<<");
+		return cityId;
+	}
 }

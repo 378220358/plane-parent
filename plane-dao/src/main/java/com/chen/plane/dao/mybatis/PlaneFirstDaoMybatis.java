@@ -2,6 +2,7 @@ package com.chen.plane.dao.mybatis;
 
 import com.chen.plane.dao.PlaneFirstDao;
 import com.chen.plane.domain.pojo.PlaneFirst;
+import com.chen.plane.domain.pojo.PlaneInfo;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 
@@ -38,5 +39,16 @@ public class PlaneFirstDaoMybatis extends BaseDaoMyBatis implements PlaneFirstDa
 		getSqlSession().selectList(NAMESPACE + "updateByPrimaryKeySelective", planeFirst);
 		log.debug("PlaneFirstDaoMybatis.updatePlaneFirstById<<<");
 	}
+
+	/**
+	 * 增加飞机舱室信息
+	 * @param first
+	 */
+	@Override public void addPlaneFirst(PlaneFirst first) {
+		log.debug("PlaneFirstDaoMybatis.addPlaneFirst>>>");
+		getSqlSession().insert(NAMESPACE + "insert", first);
+		log.debug("PlaneFirstDaoMybatis.addPlaneFirst<<<");
+	}
+
 
 }

@@ -1,6 +1,7 @@
 package com.chen.plane.dao;
 
 import com.chen.plane.domain.pojo.PlaneFirst;
+import com.chen.plane.domain.pojo.PlaneInfo;
 
 /**
  * 舱室信息dao
@@ -22,4 +23,11 @@ public interface PlaneFirstDao {
 	 * @param planeFirst
 	 */
 	void updatePlaneFirstById(PlaneFirst planeFirst);
+
+	/**
+	 * 增加飞机舱室信息
+	 * @param first
+	 */
+	void addPlaneFirst(PlaneFirst first);
+
 }

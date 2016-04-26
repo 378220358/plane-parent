@@ -237,4 +237,7 @@
       CITY_CODE = #{cityCode,jdbcType=VARCHAR}
     where CITY_ID = #{cityId,jdbcType=INTEGER}
   </update>
+  <select id="getCityIdByCityName" parameterType="java.lang.String" resultType="java.lang.Integer">
+    select c.CITY_ID FROM  city c WHERE c.CITY_NAME = #{cityName};
+  </select>
 </mapper>

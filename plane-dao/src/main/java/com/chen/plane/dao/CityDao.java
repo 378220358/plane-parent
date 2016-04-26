@@ -22,4 +22,11 @@ public interface CityDao {
 	 * 批量增加城市
 	 */
 	public void addBathCity(List<City> cityList);
+
+	/**
+	 * 根据城市名称获得城市ID
+	 * @param cityName
+	 * @return
+	 */
+	Integer getCityIdByCityName(String cityName);
 }

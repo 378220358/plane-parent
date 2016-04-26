@@ -56,7 +56,7 @@
   <div class="menu">
     <a href="/plane/ticket/ticketMain.do">机票预订</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
     <a href="/plane/user/userCenter.do">用户中心</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-    <a>订单中心</a>
+    <a href="/plane/ticket/userTicketCenter.do">订单中心</a>
   </div>
 </div>
 <div class="bodyCenter">
@@ -80,7 +80,7 @@
           <p></p>
           <div class="input-group">
             <span class="input-group-addon">登录时间：</span>
-            <input type="text" name="userTime" readonly id="userTime" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="${userInfo.userTime}">
+            <input type="text" name="userTime" readonly id="userTime" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="<fmt:formatDate value="${userInfo.userTime}" pattern="yyyy-MM-dd HH:mm:ss"/>">
           </div>
         <p></p>
         <div class="input-group">

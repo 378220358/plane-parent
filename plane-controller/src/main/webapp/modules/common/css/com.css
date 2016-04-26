@@ -26,7 +26,7 @@
 }
 .register{
     position: absolute;
-    width: 200px;
+    width: 1000px;
     height: 140px;
     top: 25px;
     left: 40%;
@@ -55,8 +55,8 @@
 }
 .userTicketCenter{
     position: absolute;
-    width: 400px;
+    width: 600px;
     height: 640px;
     top: 25px;
-    left: 60px;
+    left: 200px;
 }

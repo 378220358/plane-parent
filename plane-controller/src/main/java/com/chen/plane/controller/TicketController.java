@@ -124,6 +124,6 @@ public class TicketController extends BaseController{
 		List<Ticket> ticketList = ticketService.getTicketByUser(ticket);
 		modelMap.addAttribute("ticketList",ticketList);
 		log.debug("TicketController.userTicketCenter<<<");
-		return "";
+		return "/ticket/userTicketCenter";
 	}
 }

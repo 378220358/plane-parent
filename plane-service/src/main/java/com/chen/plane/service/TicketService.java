@@ -2,6 +2,7 @@ package com.chen.plane.service;
 
 import com.chen.plane.domain.pojo.PlaneFirst;
 import com.chen.plane.domain.pojo.PlanePool;
+import com.chen.plane.domain.pojo.PlaneTicket;
 import com.chen.plane.domain.pojo.Ticket;
 import com.chen.plane.domain.query.PlanePoolQueryObj;
 
@@ -47,4 +48,9 @@ public interface TicketService {
 	 * @return
 	 */
  	List<Ticket> getTicketByUser(Ticket ticket);
+	/**
+	 * 增加机票信息
+	 * @param planeTicket
+	 */
+	void  addPlaneTicket(PlaneTicket planeTicket);
 }
