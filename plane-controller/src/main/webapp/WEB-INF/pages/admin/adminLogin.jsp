@@ -17,14 +17,14 @@
     $(function(){
       $("#loginSubmit").click(function(){
         var flag = true;
-        if($("#userName").val() == ''){
+        if($("#BGName").val() == ''){
           flag = false;
           alert("用户名不能为空");
-          $("#userName").focus();
-        }else if($("#userPwd").val() == ''){
+          $("#BGName").focus();
+        }else if($("#BGPwd").val() == ''){
           flag = false;
           alert("密码不能为空！");
-          $("#userPwd").focus();
+          $("#BGPwd").focus();
         }
       });
     })
@@ -45,12 +45,12 @@
           <tr>
             <center><span id="showInfo" style="display: none;color: red"></span></center>
             <td>用户名：</td>
-            <td width="220"><input type="text" class="form-control" id="userName"placeholder="请输入用户名" name="adminName" value="${account}"></td>
+            <td width="220"><input type="text" class="form-control" id="BGName"placeholder="请输入用户名" name="BGName" value="${account}"></td>
             <td></td>
           </tr><tr><td>　</td></tr>
           <tr>
             <td>密 码：</td>
-            <td><input type="password" class="form-control" id="userPwd"placeholder="请输入密码" name="adminPwd"></td>
+            <td><input type="password" class="form-control" id="BGPwd"placeholder="请输入密码" name="BGPwd"></td>
           </tr><tr><td class="text-center"><font size="1.5" color="red">${loginInfo}</font>　</td></tr>
           <tr>
             <td></td>

@@ -2,6 +2,7 @@ package com.chen.plane.controller;
 
 import com.chen.plane.domain.pojo.User;
 import com.chen.plane.domain.rpc.AppServerResult;
+import com.chen.plane.service.CityService;
 import com.chen.plane.service.UserService;
 import com.chen.plane.service.impl.UserServiceImpl;
 
@@ -15,9 +16,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.text.SimpleDateFormat;
+import java.util.logging.SimpleFormatter;
 
 /**
  * 登录Controller
@@ -32,6 +36,8 @@ public class UserController extends BaseController{
 	private static final Logger log = Logger.getLogger(UserController.class);
 	@Autowired
 	private UserService userService;
+	@Autowired
+	private CityService cityService;
 
 	/**
 	 * 登录首页
@@ -60,6 +66,7 @@ public class UserController extends BaseController{
 		User user1 = userService.getUserById(user);
 		if (user1 != null) {
 			cacheUserLoginState(user1,response);
+			modelMap.addAttribute("cityList",cityService.getAllCity());
 			modelMap.addAttribute("userInfo", user1);
 			returnUrl =  "/ticket/ticketMain";
 		} else {
@@ -90,13 +97,21 @@ public class UserController extends BaseController{
 		log.debug("UserLoginController.register>>>");
 		String registerUrl = "/user/login";
 		try {
-			if (user.getUserName() != null && !user.getUserName().equals("") && user.getUserPwd() != null && !user.getUserPwd().equals("")){
-				user.setUserIp(RequestUtil.getRealIP(request));
-				userService.registerUser(user);
+			log.debug("userAfter:" + userService.getUserInfoById(user));
+			if (userService.getUserInfoById(user) == null){
+				if (user.getUserName() != null && !user.getUserName().equals("") && user.getUserPwd() != null && !user.getUserPwd().equals("")){
+					user.setUserIp(RequestUtil.getRealIP(request));
+					userService.registerUser(user);
+				}
+				else {
+					modelMap.put("error", "您输入用户名和密码为空，请重新输入");
+					registerUrl = "/user/register";
+				}
 			}else {
-				modelMap.put("error","您输入用户名和密码为空，请重新输入");
-				registerUrl = "/user/register";
+				modelMap.put("error","您输入用户名已经被注册啦！请重新输入");
+				return  "/user/register";
 			}
+
 		}catch (Exception e){
 			registerUrl = "/user/register";
 			modelMap.addAttribute("error","系统发生异常，请稍后重试");
@@ -115,9 +130,10 @@ public class UserController extends BaseController{
 		log.debug("UserController.userCenter>>>");
 		User user1 = getUserWithNotLoginException(request);
 		log.debug("user:" + user1);
+		user1.setUserName(null);
 		user = userService.getUserInfoById(user1);
 		log.debug("userAfter:" + user);
-		modelMap.addAttribute("userInfo",user);
+		modelMap.addAttribute("userInfo", user);
 		log.debug("UserController.userCenter<<<");
 		return "/user/userCenter";
 	}
@@ -132,7 +148,11 @@ public class UserController extends BaseController{
 	public String updateUser(ModelMap modelMap,User user){
 		log.debug("UserController.updateUser<<<");
 		log.debug("user : "+ user);
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		try {
+			if (user.getDateTimeString() != null){
+				user.setUserTime(dateFormat.parse(user.getDateTimeString()));
+			}
 			userService.updateUser(user);
 			modelMap.addAttribute("userInfo",user);
 		}catch (Exception e){
@@ -140,6 +160,22 @@ public class UserController extends BaseController{
 			log.debug("更新用户信息处异常啦！ error：" + e.getMessage());
 		}
 		return "/user/userCenter";
+	}
+
+	/**
+	 * 检查用户是否有重复
+	 * @return
+	 */
+	@RequestMapping(value = "/checkUser.do",method = RequestMethod.GET)
+	@ResponseBody
+	public String checkUser(String userName){
+		User user = new User();
+		user.setUserName(userName);
+		User user1 = userService.getUserInfoById(user);
+		if (user1 != null){
+			return "exist";
+		}
+		return null;
 	}
 
 

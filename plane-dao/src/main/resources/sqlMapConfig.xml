@@ -26,5 +26,6 @@
 		<mapper resource="mysql/TicketReturnMapper.xml"/>
 		<mapper resource="mysql/CityMapper.xml"/>
 		<mapper resource="mysql/PlaneFirstMapper.xml"/>
+		<mapper resource="mysql/BGUser.xml"/>
 	</mappers>
 </configuration>

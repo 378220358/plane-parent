@@ -19,4 +19,10 @@ public interface PlanePoolDao {
 	 * @return
 	 */
 	List<PlanePool> getPlanePollByCondition(PlanePoolQueryObj planePoolQueryObj);
+
+	/**
+	 * 增加票池信息
+	 * @param planePool
+	 */
+	void addPlanePool(PlanePool planePool);
 }

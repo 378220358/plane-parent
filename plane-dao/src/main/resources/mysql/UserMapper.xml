@@ -101,7 +101,12 @@
   <select id="getUserInfoById" resultMap="BaseResultMap" parameterType="com.chen.plane.domain.pojo.User">
     select * from USER
     <where>
-      USER_ID = #{userId}
+      <if test="userId != null">
+        USER_ID = #{userId}
+      </if>
+      <if test="userName != null">
+        USER_NAME = #{userName}
+      </if>
     </where>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >

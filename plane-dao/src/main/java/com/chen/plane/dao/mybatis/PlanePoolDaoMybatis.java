@@ -30,4 +30,10 @@ public class PlanePoolDaoMybatis extends BaseDaoMyBatis implements PlanePoolDao 
 		log.debug("PlanePoolDaoMybatis.getPlanePollByCondition<<<");
 		return planePoolList;
 	}
+
+	@Override public void addPlanePool(PlanePool planePool) {
+		log.debug("PlanePoolDaoMybatis.addPlanePool>>>");
+		getSqlSession().insert(NAMESPACE + "insert", planePool);
+		log.debug("PlanePoolDaoMybatis.addPlanePool<<<");
+	}
 }

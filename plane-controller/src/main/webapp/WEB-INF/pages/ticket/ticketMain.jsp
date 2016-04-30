@@ -81,12 +81,28 @@
                     </c:if>
                     <div class="input-group">
                         <span class="input-group-addon">出发城市：</span>
-                        <input type="text" name="planeStartPlace"  id="planeStartPlace" class="text state autocomplete" placeholder="请输入出发城市" aria-describedby="basic-addon1" autocomplete="off" value="${queryObj.planeStartPlace}">
+                        <select name="planeStartPlace" class="form-control">
+                            <option value="1">请输入出发城市</option>
+                            <c:if test="${cityList != null}">
+                                <c:forEach items="${cityList}" var="city">
+                                    <option value="${city.cityId}" <c:if test="${queryObj.planeStartPlace == city.cityId}">selected</c:if>>${city.cityName}</option>
+                                </c:forEach>
+                            </c:if>
+                        </select>
+
+
                     </div>
                     <p></p>
                     <div class="input-group">
                         <span class="input-group-addon" >目的城市：</span>
-                        <input type="text" id="planeEndPlace" name="planeEndPlace" class="text state autocomplete" placeholder="请输入目的城市" aria-describedby="basic-addon1" autocomplete="off" value="${queryObj.planeEndPlace}">
+                        <select name="planeEndPlace" class="form-control">
+                            <option value="1">请输入目的城市</option>
+                            <c:if test="${cityList != null}">
+                                <c:forEach items="${cityList}" var="city">
+                                    <option value="${city.cityId}" <c:if test="${queryObj.planeEndPlace == city.cityId}">selected</c:if>>${city.cityName}</option>
+                                </c:forEach>
+                            </c:if>
+                        </select>
                     </div>
                     <p></p>
                     <div class="input-group">
@@ -104,9 +120,15 @@
             </div>
         </div>
     </div>
+      <c:if test="${ticketList == null}">
+       <div class="ticketList">
+           <div class="panel panel-danger" style="width:600px;">
+               <div><h3><font color="red">没有查找到相应的航班，请重新选择日期出行</font> </h3></div>
+           </div>
+        </div>
+      </c:if>
     <c:if test="${ticketList != null}">
         <div class="ticketList">
-            <c:forEach items="${ticketList}" var="ticket">
                 <div class="panel panel-danger" style="width:600px;">
                     <div class="panel-heading" >
                         <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">机票列表</font></h3>
@@ -121,18 +143,20 @@
                                 <th style="text-align:center;">订票</th>
                             </thead>
                             <tbody>
+                            <c:forEach items="${ticketList}" var="ticket">
                                 <tr>
                                     <td style="text-align:center;"><c:out value='${ticket.planeName}'/></td>
                                     <td style="text-align:center;"><c:out value='${ticket.planeAirline}'/></td>
                                     <td style="text-align:center;"><fmt:formatDate value="${ticket.planeStartTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
                                     <td style="text-align:center;"><fmt:formatDate value="${ticket.planeEndTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
-                                    <td style="text-align:center;"><a href="/plane/ticket/selectSeat.do?ticketPoolId=${ticket.ticketPoolId}&cabinId=${ticket.ticketPoolId}">订票</a> </td>
+                                    <td style="text-align:center;"><a href="/plane/ticket/selectSeat.do?cabinId=${ticket.ticketPoolId}">订票</a> </td>
                                 </tr>
+                            </c:forEach>
                             </tbody>
                         </table>
                     </div>
                 </div>
-            </c:forEach>
+
         </div>
     </c:if>
   </div>

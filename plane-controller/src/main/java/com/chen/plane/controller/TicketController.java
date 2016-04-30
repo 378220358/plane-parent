@@ -45,8 +45,9 @@ public class TicketController extends BaseController{
 		log.debug("TicketController.ticketMain>>>");
 		List<City> cityList = cityService.getAllCity();
 		User user = getUserWithNotLoginException(request);
+		modelMap.addAttribute("cityList",cityService.getAllCity());
 		modelMap.addAttribute("userInfo",user);
-		modelMap.addAttribute("allCity",cityList);
+		modelMap.addAttribute("cityList", cityList);
 		log.debug("TicketController.ticketMain<<<");
 		return "/ticket/ticketMain";
 	}
@@ -60,19 +61,22 @@ public class TicketController extends BaseController{
 	@RequestMapping(value = "/queryTicket.do",method = RequestMethod.POST)
 	public String queryTicket(PlanePoolQueryObj planePoolQueryObj,ModelMap modelMap,HttpServletRequest request) throws ParseException {
 		log.debug("TicketController.queryTicket>>>");
+		log.debug("planePoolQueryObj:" + planePoolQueryObj);
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		if(planePoolQueryObj.getViewStartPlaneTime() != null && !planePoolQueryObj.getViewStartPlaneTime().equals("")){
 			planePoolQueryObj.setStartPlaneTime(dateFormat.parse(planePoolQueryObj.getViewStartPlaneTime()));
 		}
 		System.out.println("ticketList:" + planePoolQueryObj);
 		List<PlanePool> planePoolList = ticketService.getPlanePollByCondition(planePoolQueryObj);
-		if (planePoolList != null){
-			modelMap.addAttribute("ticketList",planePoolList);
+		if (planePoolList != null && planePoolList.size() == 0){
+			planePoolList = null;
 		}
+		modelMap.addAttribute("ticketList",planePoolList);
 		User user = getUserWithNotLoginException(request);
 		modelMap.addAttribute("userInfo",user);
 		modelMap.addAttribute("queryObj",planePoolQueryObj);
 		List<City> cityList = cityService.getAllCity();
+		modelMap.addAttribute("cityList",cityList);
 		log.debug("TicketController.queryTicket<<<");
 		return "/ticket/ticketMain";
 	}

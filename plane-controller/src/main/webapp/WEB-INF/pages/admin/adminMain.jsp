@@ -56,14 +56,18 @@
             </div>
 
     <div class="menu">
-        <a href="/plane/admin/addPlaneTicketIndex.do">后台首页</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="/plane/admin/adminMainIndex.do">后台首页</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
         <a href="/plane/admin/addCityIndex.do">开通城市</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
         <a href="/plane/admin/addPlaneTicketIndex.do">增加航班信息</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="/plane/admin/getAllCity.do">城市列表</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="/plane/admin/getAllPlaneTicket.do">所有航班信息</a>
+        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+        <a href="/plane/admin/planeInfoList.do">所有航班售卖信息</a>
     </div>
   </div>
   <div class="bodyCenter">
     <div class="register">
-        <div class="panel panel-danger" style="width:300px;">
+        <div class="panel panel-danger" style="width:400px;">
             <div class="panel-heading" >
                 <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">机票预订</font></h3>
             </div>
@@ -72,8 +76,19 @@
                     <div>
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                         <a href="/plane/admin/addCityIndex.do"> <button type="button" class="btn btn-primary" id="registerSubmit">开通城市</button></a>
-                        &nbsp &nbsp &nbsp &nbsp &nbsp
+                        &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp
                         <a href="/plane/admin/addPlaneTicketIndex.do"> <button type="button" class="btn btn-primary" id="reset">增加航班</button></a>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <p> </p>
+                        <p> </p>
+                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                        <c:if test="${admin.BGRole == 'ADMIN'}">
+                            <a href="/plane/bg/addBGUserIndex.do"> <button type="button" class="btn btn-primary" id="dd">增加管理员</button></a>
+                        </c:if>
+                        &nbsp &nbsp &nbsp&nbsp &nbsp
+                        <c:if test="${admin.BGRole == 'ADMIN'}">
+                            <a href="/plane/bg/updateBGUserIndex.do"> <button type="button" class="btn btn-primary" id="cc">赋予权限</button></a>
+                        </c:if>
                     </div>
                 </form>
             </div>

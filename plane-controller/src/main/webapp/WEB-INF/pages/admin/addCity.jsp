@@ -45,9 +45,13 @@
     </div>
   </c:if>
   <div class="menu">
-    <a href="/plane/admin/addPlaneTicketIndex.do">后台首页</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <a href="/plane/admin/adminMainIndex.do">后台首页</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
     <a href="/plane/admin/addCityIndex.do">开通城市</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
     <a href="/plane/admin/addPlaneTicketIndex.do">增加航班信息</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <a href="/plane/admin/getAllCity.do">城市列表</a>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <a href="/plane/admin/getAllPlaneTicket.do">所有航班信息</a>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+    <a href="/plane/admin/planeInfoList.do">所有航班售卖信息</a>
   </div>
 
 </div>
@@ -72,7 +76,7 @@
         <p></p>
         <div>
           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-          <button type="submit" class="btn btn-primary" id="registerSubmit">修改密码</button>
+          <button type="submit" class="btn btn-primary" id="registerSubmit">开通</button>
           &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
           <button type="reset" class="btn btn-primary" id="reset">重置</button>
         </div>

@@ -62,6 +62,9 @@ public class PlaneTicket {
     private String planeEndPlaceName;
     private String planeStartTimeString;
     private String planeEndTimeString;
+    private String cabinAledrdySeat;
+    private Integer alerdySale;
+    private Integer remainSale;
 
     public String getPlaneStartTimeString() {
         return planeStartTimeString;
@@ -295,6 +298,30 @@ public class PlaneTicket {
         this.planeInfoId = planeInfoId;
     }
 
+    public String getCabinAledrdySeat() {
+        return cabinAledrdySeat;
+    }
+
+    public void setCabinAledrdySeat(String cabinAledrdySeat) {
+        this.cabinAledrdySeat = cabinAledrdySeat;
+    }
+
+    public Integer getAlerdySale() {
+        return alerdySale;
+    }
+
+    public void setAlerdySale(Integer alerdySale) {
+        this.alerdySale = alerdySale;
+    }
+
+    public Integer getRemainSale() {
+        return remainSale;
+    }
+
+    public void setRemainSale(Integer remainSale) {
+        this.remainSale = remainSale;
+    }
+
     @Override public String toString() {
         return "PlaneTicket{" +
                 "planeId=" + planeId +
@@ -308,6 +335,9 @@ public class PlaneTicket {
                 ", planeEndPlaceName='" + planeEndPlaceName + '\'' +
                 ", planeStartTimeString='" + planeStartTimeString + '\'' +
                 ", planeEndTimeString='" + planeEndTimeString + '\'' +
+                ", cabinAledrdySeat='" + cabinAledrdySeat + '\'' +
+                ", alerdySale=" + alerdySale +
+                ", remainSale=" + remainSale +
                 ", planeInfoId=" + planeInfoId +
                 '}';
     }

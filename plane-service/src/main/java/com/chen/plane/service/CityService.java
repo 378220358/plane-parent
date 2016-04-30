@@ -22,4 +22,22 @@ public interface CityService {
 	 * @param city
 	 */
 	void addCity(City city);
+	/**
+	 * 根据城市ID获得城市信息
+	 * @param cityId
+	 * @return
+	 */
+	City getCityById(Integer cityId);
+
+	/**
+	 * 更新城市信息
+	 * @param city
+	 */
+	void updateCity(City city);
+
+	/**
+	 * 根据城市ID删除城市
+	 * @param cityId
+	 */
+	void deleteCity(Integer cityId);
 }

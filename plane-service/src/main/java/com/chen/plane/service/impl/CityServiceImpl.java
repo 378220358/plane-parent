@@ -45,4 +45,25 @@ public class CityServiceImpl implements CityService {
 		log.debug("CityServiceImpl.addCity<<<");
 	}
 
+	@Override public City getCityById(Integer cityId) {
+		log.debug("CityServiceImpl.getCityById>>>");
+		City city = cityDao.getCityById(cityId);
+		log.debug("CityServiceImpl.getCityById<<<");
+		return city;
+	}
+
+	@Override public void updateCity(City city) {
+		log.debug("CityServiceImpl.updateCity>>>");
+		cityDao.updateCity(city);
+		log.debug("CityServiceImpl.updateCity<<<");
+
+	}
+
+	@Override public void deleteCity(Integer cityId) {
+		log.debug("CityServiceImpl.deleteCity>>>");
+		cityDao.deleteCity(cityId);
+		log.debug("CityServiceImpl.deleteCity<<<");
+
+	}
+
 }

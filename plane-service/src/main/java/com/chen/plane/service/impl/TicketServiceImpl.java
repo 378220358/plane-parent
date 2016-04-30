@@ -42,6 +42,9 @@ public class TicketServiceImpl implements TicketService {
 	@Override public List<PlanePool> getPlanePollByCondition(PlanePoolQueryObj planePoolQueryObj) {
 		log.debug("TicketServiceImpl.getPlanePollByCondition>>>");
 		List<PlanePool> planePoolList = planePoolDao.getPlanePollByCondition(planePoolQueryObj);
+		for (PlanePool planePool : planePoolList){
+			planePool.setCabinId(planeTicketDao.getCabinId(planePool.getPlaneInfoId()));
+		}
 		log.debug("TicketServiceImpl.getPlanePollByCondition<<<");
 		return planePoolList;
 	}
@@ -111,8 +114,6 @@ public class TicketServiceImpl implements TicketService {
 	 */
 	@Override public void addPlaneTicket(PlaneTicket planeTicket) {
 		log.debug("TicketServiceImpl.addPlaneTicket>>>");
-		planeTicket.setPlaneStartPlace(cityDao.getCityIdByCityName(planeTicket.getPlaneStartPlaceName()));
-		planeTicket.setPlaneEndPlace(cityDao.getCityIdByCityName(planeTicket.getPlaneEndPlaceName()));
 		PlaneFirst planeFirst = new PlaneFirst();
 		planeFirst.setCabinOneSum(1);
 		planeFirstDao.addPlaneFirst(planeFirst);
@@ -121,6 +122,9 @@ public class TicketServiceImpl implements TicketService {
 		planeInfoDao.addPlaneInfo(planeInfo);
 		planeTicket.setPlaneId(planeInfo.getPlaneInfoId());
 		planeTicketDao.addPlaneTicket(planeTicket);
+		PlanePool planePool = new PlanePool();
+		planePool.setPlaneInfoId(planeInfo.getPlaneInfoId());
+		planePoolDao.addPlanePool(planePool);
 		log.debug("TicketServiceImpl.addPlaneTicket<<<");
 	}
 

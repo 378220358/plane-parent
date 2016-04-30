@@ -23,9 +23,9 @@
   <select id="getPlanePollByCondition" parameterType="com.chen.plane.domain.query.PlanePoolQueryObj" resultMap="AllPlanePool">
     SELECT * FROM PLANE_POOL p LEFT JOIN PLANE_TICKET t ON p.PLANE_INFO_ID = t.PLANE_ID
     WHERE
-    t.PLANE_START_PLACE = (SELECT c.CITY_ID FROM CITY c WHERE c.CITY_NAME = #{planeStartPlace})
+    t.PLANE_START_PLACE = #{planeStartPlace}
     <if test="planeEndPlace != null">
-      AND t.PLANE_END_PLACE = (SELECT c.CITY_ID FROM CITY c WHERE c.CITY_NAME = #{planeEndPlace})
+      AND t.PLANE_END_PLACE = #{planeEndPlace}
     </if>
     AND t.PLANE_START_TIME &gt;= #{startPlaneTime}
   </select>
@@ -163,10 +163,10 @@
       This element was generated on Thu Jan 28 15:38:52 CST 2016.
     -->
     insert into plane_pool (TICKET_POOL_ID, PLANE_INFO_ID, TICKET_POOL_SUM, 
-      TICKET_POOL_SALE, TAKE_OFF_PLACE, TAKE_ON_PLACE
+      TICKET_POOL_SALE
       )
     values (#{ticketPoolId,jdbcType=INTEGER}, #{planeInfoId,jdbcType=INTEGER}, #{ticketPoolSum,jdbcType=INTEGER}, 
-      #{ticketPoolSale,jdbcType=INTEGER}, #{takeOffPlace,jdbcType=INTEGER}, #{takeOnPlace,jdbcType=INTEGER}
+      #{ticketPoolSale,jdbcType=INTEGER}
       )
   </insert>
   <insert id="insertSelective" parameterType="com.chen.plane.domain.pojo.PlanePool" >

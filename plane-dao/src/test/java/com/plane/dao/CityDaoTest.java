@@ -77,9 +77,9 @@ public class CityDaoTest {
 	@Test
 	public void testPlaneDao(){
 		PlanePoolQueryObj planePoolQueryObj = new PlanePoolQueryObj();
-		planePoolQueryObj.setPlaneEndPlace("±±¾©");
-		planePoolQueryObj.setPlaneStartPlace("ÄÏ²ý");
-		String dd = "2016-03-18 08:10:00";
+		planePoolQueryObj.setPlaneEndPlace(2);
+		planePoolQueryObj.setPlaneStartPlace(1);
+		String dd = "2016-03-11 08:10:00";
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		Date date = null;
 		try {

@@ -75,12 +75,12 @@
           <p></p>
           <div class="input-group">
             <span class="input-group-addon">用&nbsp 户&nbsp&nbspIP：</span>
-            <input type="text" name="userName" readonly id="userIp" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="${userInfo.userIp}">
+            <input type="text" name="userIp" readonly id="userIp" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="${userInfo.userIp}">
           </div>
           <p></p>
           <div class="input-group">
             <span class="input-group-addon">登录时间：</span>
-            <input type="text" name="userTime" readonly id="userTime" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="<fmt:formatDate value="${userInfo.userTime}" pattern="yyyy-MM-dd HH:mm:ss"/>">
+            <input type="text" name="dateTimeString" readonly id="userTime" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" value="<fmt:formatDate value="${userInfo.userTime}" pattern="yyyy-MM-dd HH:mm:ss"/>">
           </div>
         <p></p>
         <div class="input-group">

@@ -54,33 +54,31 @@
       </div>
   </div>
   <div class="bodyCenter">
-    <div class="register">
-        <div class="panel panel-danger" style="width:400px;">
+    <div class="ticket">
+        <div class="panel panel-danger" style="width:900px;">
             <div class="panel-heading" >
                 <h3 class="panel-title" ><font style="font-family:Tahoma, Geneva, sans-serif">订单中心</font></h3>
             </div>
-            <div class="panel-body">
-                <table cellspacing="0" summary="" class="tab" id="pollTab">
-                    <thead>
-                        <th style="text-align:center;">姓名</th>
-                        <th style="text-align: center;">身份证号码</th>
-                        <th style="text-align:center;">订单时间</th>
-                        <th style="text-align:center;">订单IP</th>
-                        <th style="text-align:center;">订单金额</th>
-                    </thead>
-                    <tbody>
-                        <c:forEach items="${ticketList}" var="ticket">
-                            <tr>
-                                <td style="text-align:center;"><c:out value='${ticket.ticketName}'/></td>
-                                <td style="text-align:center;"><c:out value='${ticket.ticketCard}'/></td>
-                                <td style="text-align:center;"><fmt:formatDate value="${ticket.ticketTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
-                                <td style="text-align:center;"><c:out value='${ticket.ticketIp}'/></td>
-                                <td style="text-align:center;"><c:out value='${ticket.ticketMoney}'/></td>
-                            </tr>
-                        </c:forEach>
-                    </tbody>
-                </table>
-            </div>
+            <table cellspacing="0" summary="" class="tab" id="pollTab">
+                <thead>
+                <th style="text-align:center;" width="100px">姓名</th>
+                <th style="text-align: center;" width="200px">身份证号码</th>
+                <th style="text-align:center;" width="200px">订单时间</th>
+                <th style="text-align:center;" width="200px">订单IP</th>
+                <th style="text-align:center;" width="200px">订单金额</th>
+                </thead>
+                <tbody>
+                <c:forEach items="${ticketList}" var="ticket">
+                    <tr>
+                        <td style="text-align:center;"><c:out value='${ticket.ticketName}'/></td>
+                        <td style="text-align:center;"><c:out value='${ticket.ticketCard}'/></td>
+                        <td style="text-align:center;"><fmt:formatDate value="${ticket.ticketTime }" pattern="yyyy-MM-dd HH:mm:ss"/></td>
+                        <td style="text-align:center;"><c:out value='${ticket.ticketIp}'/></td>
+                        <td style="text-align:center;"><c:out value='${ticket.ticketMoney}'/></td>
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
         </div>
     </div>
   </div>

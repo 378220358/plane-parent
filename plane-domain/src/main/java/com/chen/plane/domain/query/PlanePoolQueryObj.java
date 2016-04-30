@@ -10,24 +10,24 @@ import java.util.Date;
  * @version 1.0  2016/3/17
  */
 public class PlanePoolQueryObj {
-	private String planeStartPlace;
-	private String planeEndPlace;
+	private Integer planeStartPlace;
+	private Integer planeEndPlace;
 	private Date startPlaneTime;
 	private String viewStartPlaneTime;
 
-	public String getPlaneStartPlace() {
+	public Integer getPlaneStartPlace() {
 		return planeStartPlace;
 	}
 
-	public void setPlaneStartPlace(String planeStartPlace) {
+	public void setPlaneStartPlace(Integer planeStartPlace) {
 		this.planeStartPlace = planeStartPlace;
 	}
 
-	public String getPlaneEndPlace() {
+	public Integer getPlaneEndPlace() {
 		return planeEndPlace;
 	}
 
-	public void setPlaneEndPlace(String planeEndPlace) {
+	public void setPlaneEndPlace(Integer planeEndPlace) {
 		this.planeEndPlace = planeEndPlace;
 	}
 

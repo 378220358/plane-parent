@@ -17,13 +17,7 @@
  };
  $.fn.onlyDegree = function () {
      $(this).keypress(function (event) {
-         var eventObj = event || e;
-         var keyCode = eventObj.keyCode || eventObj.which;
-         if ((keyCode >= 48 && keyCode <= 57) || keyCode == 8 || keyCode == 46 ||(keyCode>37 && keyCode < 40) || keyCode == 45)
-             return true;
-         else{
-        	 return false;
-         }
+
      }).focus(function () {
      //禁用输入法
          this.style.imeMode = 'disabled';

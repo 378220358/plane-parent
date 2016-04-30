@@ -2,32 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ab31667-727f-42fc-bcab-731713e82c50" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneInfoDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneInfoDaoMybatis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addPlaneTicket.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/images/err_403.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/BGUser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/BGUser.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/BGUserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/BGUserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/BGUserDaoMybatis.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/BGUserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/BGUserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/CityList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/PlaneTicketService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/PlaneTicketServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/bgUserList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/noRole.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/planeInfoList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/planeTicketList.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/registerAdmin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updateAdmin.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updateCity.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updatePlaneTicket.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/AdminController.java" afterPath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/AdminController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/CityDao.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/CityDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/CityDaoMybatis.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/CityDaoMybatis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/CityMapper.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/CityMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneFirstDao.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneFirstDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneFirstDaoMybatis.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneFirstDaoMybatis.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneFirstMapper.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneFirstMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneInfoMapper.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneInfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/CityDaoTest.java" afterPath="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/CityDaoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/CityService.java" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/CityService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/CityServiceImpl.java" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/CityServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlanePool.java" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlanePool.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlanePoolDao.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlanePoolDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlanePoolDaoMybatis.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlanePoolDaoMybatis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlanePoolMapper.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlanePoolMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/query/PlanePoolQueryObj.java" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/query/PlanePoolQueryObj.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneTicket.java" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneTicket.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java" afterPath="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneTicketMapper.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneTicketMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/TicketController.java" afterPath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/TicketController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/TicketService.java" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/TicketService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/TicketServiceImpl.java" afterPath="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/TicketServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/User.java" afterPath="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserController.java" afterPath="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/UserMapper.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/UserMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addCity.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addCity.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addPlaneTicket.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addPlaneTicket.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminLogin.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminLogin.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminMain.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminMain.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/css/com.css" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/css/com.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/log4j.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/log4j.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/resources/user/oauth-config.xml" afterPath="$PROJECT_DIR$/plane-controller/src/main/resources/user/oauth-config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-cache/plane-cache.iml" afterPath="$PROJECT_DIR$/plane-cache/plane-cache.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-constant/plane-constant.iml" afterPath="$PROJECT_DIR$/plane-constant/plane-constant.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/plane-controller.iml" afterPath="$PROJECT_DIR$/plane-controller/plane-controller.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/plane-dao.iml" afterPath="$PROJECT_DIR$/plane-dao/plane-dao.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-domain/plane-domain.iml" afterPath="$PROJECT_DIR$/plane-domain/plane-domain.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-parent.iml" afterPath="$PROJECT_DIR$/plane-parent.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-service/plane-service.iml" afterPath="$PROJECT_DIR$/plane-service/plane-service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-util/plane-util.iml" afterPath="$PROJECT_DIR$/plane-util/plane-util.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/plane_controller_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/plane_controller_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/register.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-dao/src/main/resources/sqlMapConfig.xml" afterPath="$PROJECT_DIR$/plane-dao/src/main/resources/sqlMapConfig.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/ticketMain.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/ticketMain.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/userCenter.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/userCenter.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/userTicketCenter.jsp" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/userTicketCenter.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/js/validate.js" afterPath="$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/js/validate.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__net_sf_json_lib_json_lib_2_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_aop_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_beans_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_context_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_context_support_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_core_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_expression_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_jdbc_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_orm_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_oxm_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_test_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_tx_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_web_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_2_4_RELEASE.xml" />
+      <change type="MOVED" beforePath="E:\shijie\plane-parent\.idea\libraries\Maven__org_springframework_spring_webmvc_4_0_5_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" />
     </list>
     <ignored path="plane-parent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,69 +113,47 @@
         <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/TicketController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/AdminController.java">
+      <file leaf-file-name="PlanePoolDaoMybatis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlanePoolDaoMybatis.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="67" column="44" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="44" />
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanePoolMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlanePoolMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.8363636">
+              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1462001982109" expanded="true" signature="1493:1777" placeholder="SELECT * FRO..PLANE_POOL..." />
+                <marker date="1462001982109" expanded="true" signature="5756:5884" placeholder="select from ..plane_pool..." />
+                <marker date="1462001982109" expanded="true" signature="6167:6249" placeholder="delete from ..." />
+                <marker date="1462001982109" expanded="true" signature="6548:6570" placeholder="delete from ..." />
+                <marker date="1462001982109" expanded="true" signature="6953:7220" placeholder="insert into ..." />
+                <marker date="1462001982109" expanded="true" signature="9033:9064" placeholder="select count..plane_pool..." />
+                <marker date="1462001982109" expanded="true" signature="10593:10997" placeholder="update plane..." />
+                <marker date="1462001982109" expanded="true" signature="11411:12068" placeholder="update plane..." />
+                <marker date="1462001982109" expanded="true" signature="12370:12735" placeholder="update plane..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserController.java">
+      <file leaf-file-name="PlaneTicketDaoMybatis.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="119" column="45" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="44" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/UserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
-              <folding>
-                <marker date="1459756458940" expanded="true" signature="4154:4232" placeholder="select * FRO..USER..." />
-                <marker date="1459756458940" expanded="true" signature="4733:4842" placeholder="select from ..user..." />
-                <marker date="1459756458940" expanded="true" signature="5125:5188" placeholder="delete from ..." />
-                <marker date="1459756458940" expanded="true" signature="5482:5498" placeholder="delete from ..." />
-                <marker date="1459756458940" expanded="true" signature="5876:6116" placeholder="insert into ..." />
-                <marker date="1459756458940" expanded="true" signature="7636:7661" placeholder="select count..user..." />
-                <marker date="1459756458940" expanded="true" signature="9006:9285" placeholder="update user ..." />
-                <marker date="1459756458940" expanded="true" signature="9694:10159" placeholder="update user ..." />
-                <marker date="1459756458940" expanded="true" signature="10456:10703" placeholder="update user ..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDaoMybatis.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/UserDaoMybatis.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="37" />
+              <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -132,39 +162,79 @@
       <file leaf-file-name="ticketMain.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/ticketMain.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-52.911766">
-              <caret line="126" column="148" selection-start-line="126" selection-start-column="67" selection-end-line="126" selection-end-column="148" />
+            <state vertical-scroll-proportion="-21.32353">
+              <caret line="129" column="25" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userTicketCenter.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/userTicketCenter.jsp">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.1764705">
-              <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.45387453">
+              <caret line="248" column="32" selection-start-line="248" selection-start-column="32" selection-end-line="248" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="com.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/css/com.css">
+      <file leaf-file-name="PlaneTicketDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.50883394">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userCenter.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/userCenter.jsp">
+      <file leaf-file-name="PlaneTicketMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneTicketMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.764706">
-              <caret line="82" column="194" selection-start-line="82" selection-start-column="194" selection-end-line="82" selection-end-column="194" />
+            <state vertical-scroll-proportion="-8.04">
+              <caret line="96" column="24" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="24" />
+              <folding>
+                <marker date="1462007970401" expanded="true" signature="4397:4436" placeholder="SELECT from ..PLANE_FIRST..." />
+                <marker date="1462007970401" expanded="true" signature="4397:4539" placeholder="SELECT pf.CA..PLANE_FIRST..." />
+                <marker date="1462007970401" expanded="true" signature="5469:5588" placeholder="select from ..plane_ticket..." />
+                <marker date="1462007970401" expanded="true" signature="5871:5944" placeholder="delete from ..." />
+                <marker date="1462007970401" expanded="true" signature="6245:6269" placeholder="delete from ..." />
+                <marker date="1462007970401" expanded="true" signature="6700:7160" placeholder="insert into ..." />
+                <marker date="1462007970401" expanded="true" signature="9304:9337" placeholder="select count..plane_ticket..." />
+                <marker date="1462007970401" expanded="true" signature="11107:11634" placeholder="update plane..." />
+                <marker date="1462007970401" expanded="true" signature="12050:12925" placeholder="update plane..." />
+                <marker date="1462007970401" expanded="true" signature="13229:13648" placeholder="update plane..." />
+                <marker date="1462007970401" expanded="true" signature="13725:13751" placeholder="select * fro..plane_ticket..." />
+                <marker date="1462007970401" expanded="true" signature="13830:14012" placeholder="SELECT pt.* ..PLANE_TICKET..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TicketServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/TicketServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlanePool.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlanePool.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="223" column="28" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
+              <folding>
+                <element signature="e#5821#5822#0" expanded="true" />
+                <element signature="e#5869#5870#0" expanded="true" />
+                <element signature="e#5904#5905#0" expanded="true" />
+                <element signature="e#5934#5935#0" expanded="true" />
+                <element signature="e#5981#5982#0" expanded="true" />
+                <element signature="e#6019#6020#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -196,57 +266,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp" />
-        <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/Admin.java" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/resources/user/oauth-config.xml" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminLogin.jsp" />
-        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/CityService.java" />
-        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/CityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneFirst.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/Ticket.java" />
-        <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/Ticket.java" />
-        <option value="$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/Random/RandomUtils.java" />
-        <option value="$PROJECT_DIR$/plane-service/pom.xml" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PAYDao.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PAYDao.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PAYDaoMybatis.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/CityDaoTest.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PAYMapper.xml" />
-        <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneFirst.java" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/selectSeat.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/userTicketCenter.jsp" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/CityController.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/TicketDao.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/TicketDaoMybatis.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/TicketMapper.xml" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/userTicketCenter.jsp" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java" />
-        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/UserService.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java" />
+        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/CityService.java" />
         <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/CityDao.java" />
+        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/CityServiceImpl.java" />
         <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/CityDaoMybatis.java" />
-        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/TicketService.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneFirstMapper.xml" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneFirstDaoMybatis.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneFirstDao.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneInfoDao.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneInfoDao.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneInfoMapper.xml" />
-        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/TicketServiceImpl.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneInfoDaoMybatis.java" />
+        <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/query/PlanePoolQueryObj.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/CityDaoTest.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/register.jsp" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlanePoolDao.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlanePoolDaoMybatis.java" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminLogin.jsp" />
+        <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/BGUser.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/sqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/resources/user/oauth-config.xml" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/js/validate.js" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/registerAdmin.jsp" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/BGUserDao.java" />
+        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/BGUserService.java" />
+        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/BGUserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/noRole.jsp" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/BGUser.xml" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/BGUserController.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/BGUserDaoMybatis.java" />
+        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/PlaneTicketService.java" />
         <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneTicket.java" />
-        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/CityMapper.xml" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/AdminController.java" />
+        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/PlaneTicketServiceImpl.java" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addCity.jsp" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addPlaneTicket.jsp" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminMain.jsp" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addCity.jsp" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/ticketMain.jsp" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/bgUserList.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/CityList.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/planeInfoList.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/planeTicketList.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updateAdmin.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updateCity.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updatePlaneTicket.jsp" />
+        <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/User.java" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/userCenter.jsp" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlanePoolMapper.xml" />
+        <option value="$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlanePool.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneTicketMapper.xml" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java" />
+        <option value="$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java" />
+        <option value="$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/TicketServiceImpl.java" />
         <option value="$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/TicketController.java" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/userTicketCenter.jsp" />
-        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/css/com.css" />
+        <option value="$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/ticketMain.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -393,6 +463,18 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plane-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -849,40 +931,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="query" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="pojo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -942,36 +990,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-dao" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1292,6 +1310,10 @@
               <option name="myItemId" value="pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1362,82 +1384,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1689,18 +1635,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="plane-parent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1724,10 +1658,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\shijie\plane-parent\plane-controller\src\main\webapp\WEB-INF\pages\admin" />
+      <recent name="E:\shijie\plane-parent\plane-controller\src\main\webapp\modules\common\images" />
+      <recent name="E:\shijie\plane-parent\plane-dao\src\main\resources\mysql" />
       <recent name="E:\shijie\plane-parent\plane-controller\src\main\webapp\WEB-INF\pages\user" />
       <recent name="E:\shijie\plane-parent\plane-util\src\main\java\com\chen\plane\util\Random" />
-      <recent name="E:\shijie\plane-parent\plane-dao\src\main\resources" />
-      <recent name="E:\shijie\plane-parent\plane-controller\src\main\webapp\modules\common\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\shijie\plane-parent\plane-controller\src\main\webapp\WEB-INF\pages\ticket" />
@@ -2286,11 +2220,11 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testAddPAYDao" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testAddTicket" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testUpdatePlaneFirst" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testPlaneFirst" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testPlaneDao" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testPlaneDao" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testAddPAYDao" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testAddTicket" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testUpdatePlaneFirst" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CityDaoTest.testPlaneFirst" />
       </list>
     </recent_temporary>
   </component>
@@ -2367,7 +2301,10 @@
       <workItem from="1461241064465" duration="1595000" />
       <workItem from="1461469965845" duration="27453000" />
       <workItem from="1461592830407" duration="6126000" />
-      <workItem from="1461672119702" duration="7280000" />
+      <workItem from="1461672119702" duration="8194000" />
+      <workItem from="1461768276037" duration="8856000" />
+      <workItem from="1461846011609" duration="13746000" />
+      <workItem from="1461983057106" duration="25907000" />
     </task>
     <task id="LOCAL-00001" summary="初始版本">
       <created>1454309363879</created>
@@ -2537,11 +2474,17 @@
       <option name="project" value="LOCAL" />
       <updated>1461596554464</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="[change]完工">
+      <created>1461679498851</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1461679498851</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324954000" />
+    <option name="totallyTimeSpent" value="374377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -2552,22 +2495,22 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54812396" sideWeight="0.2344932" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4959217" sideWeight="0.23903178" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38336053" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24281392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49102774" sideWeight="0.7655068" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4208809" sideWeight="0.7609682" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2580,7 +2523,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54812396" sideWeight="0.2344932" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4959217" sideWeight="0.23903178" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2589,7 +2532,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49102774" sideWeight="0.7655068" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4208809" sideWeight="0.7609682" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2597,9 +2540,9 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38336053" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2987897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24281392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
@@ -2638,7 +2581,8 @@
     <MESSAGE value="[change]修复管理员中心&#10;" />
     <MESSAGE value="[change]做好选座和订单中心" />
     <MESSAGE value="[change]用户订单中心" />
-    <option name="LAST_COMMIT_MESSAGE" value="[change]用户订单中心" />
+    <MESSAGE value="[change]完工" />
+    <option name="LAST_COMMIT_MESSAGE" value="[change]完工" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2651,268 +2595,24 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7123288">
-          <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/js/jquery.seat-charts.js">
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/CityDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="328" column="29" selection-start-line="328" selection-start-column="29" selection-end-line="328" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-util/src/main/java/com/chen/plane/util/Random/RandomUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.2">
-          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PAY.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33239436">
-          <caret line="229" column="19" selection-start-line="229" selection-start-column="19" selection-end-line="229" selection-end-column="19" />
-          <folding>
-            <element signature="e#6263#6264#0" expanded="false" />
-            <element signature="e#6295#6296#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PAYDaoMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PAYMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="140" column="7" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/test/java/com/plane/dao/CityDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2058823">
-          <caret line="59" column="31" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/selectSeat.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4269662">
-          <caret line="90" column="28" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/TicketDaoMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PAYDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/TicketDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/CityController.java">
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PAYDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/TicketMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="351" column="29" selection-start-line="351" selection-start-column="14" selection-end-line="351" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/filter/LoginValidateFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="45" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlanePoolDaoMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.11660777">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlanePool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlanePoolMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PLANE_POOL..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="SELECT c.CIT..CITY..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="SELECT c.CIT..CITY..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="select from ..plane_pool..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="select count..plane_pool..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="update plane..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="update plane..." />
-            <marker date="1458401730041" expanded="true" signature="-1:-1" placeholder="update plane..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/CityDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/TicketService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneFirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneFirstMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8">
-          <caret line="143" column="121" selection-start-line="143" selection-start-column="76" selection-end-line="143" selection-end-column="121" />
-          <folding>
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="select from ..plane_first..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="select count..plane_first..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="update plane..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="update plane..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="update plane..." />
-            <marker date="1461674928384" expanded="true" signature="-1:-1" placeholder="select * fro..plane_first..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneInfoMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="141" column="123" selection-start-line="141" selection-start-column="123" selection-end-line="141" selection-end-column="123" />
-          <folding>
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="select from ..plane_info..." />
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="insert into ..." />
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="select count..plane_info..." />
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="update plane..." />
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="update plane..." />
-            <marker date="1461675480481" expanded="true" signature="-1:-1" placeholder="update plane..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/CityDaoMybatis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneInfoDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44349316">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="29" />
-          <folding />
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -2920,109 +2620,199 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneInfoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/TicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneFirstDaoMybatis.java">
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/sqlMapConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.2">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java">
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/resources/user/oauth-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state vertical-scroll-proportion="-2.5">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneInfoDaoMybatis.java">
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/UserDaoMybatis.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.088235">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/js/validate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/BGUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="37" selection-start-line="32" selection-start-column="4" selection-end-line="36" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/TicketServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/BGUserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/noRole.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.6764705">
+          <caret line="16" column="106" selection-start-line="16" selection-start-column="106" selection-end-line="16" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/BGUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/BGUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="8" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/BGUserDaoMybatis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/BGUser.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="28" selection-start-line="8" selection-start-column="7" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <marker date="1461998849674" expanded="true" signature="-1:-1" placeholder="select * FRO..BG_USER..." />
+            <marker date="1461998849674" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461998849674" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1461998849674" expanded="true" signature="-1:-1" placeholder="select * fro..BG_USER..." />
+            <marker date="1461998849674" expanded="true" signature="-1:-1" placeholder="UPDATE bg_us..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/BGUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.633333">
+          <caret line="90" column="68" selection-start-line="89" selection-start-column="8" selection-end-line="90" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.7.0_80/src.zip!/java/text/SimpleDateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33214286">
+          <caret line="1379" column="0" selection-start-line="1379" selection-start-column="0" selection-end-line="1379" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/PlaneTicketService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlaneTicket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0">
-          <caret line="63" column="37" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="236" column="19" selection-start-line="236" selection-start-column="19" selection-end-line="236" selection-end-column="19" />
           <folding>
-            <element signature="e#1976#1977#0" expanded="true" />
-            <element signature="e#2019#2020#0" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#2200#2201#0" expanded="true" />
-            <element signature="e#2241#2242#0" expanded="true" />
-            <element signature="e#2309#2310#0" expanded="true" />
-            <element signature="e#2369#2370#0" expanded="true" />
+            <element signature="e#7113#7114#0" expanded="true" />
+            <element signature="e#7151#7152#0" expanded="true" />
+            <element signature="e#8641#8642#0" expanded="true" />
+            <element signature="e#8675#8676#0" expanded="true" />
+            <element signature="e#9016#9017#0" expanded="true" />
+            <element signature="e#9062#9063#0" expanded="true" />
+            <element signature="e#9105#9106#0" expanded="true" />
+            <element signature="e#9144#9145#0" expanded="true" />
+            <element signature="e#9208#9209#0" expanded="true" />
+            <element signature="e#9264#9265#0" expanded="true" />
+            <element signature="e#9302#9303#0" expanded="true" />
+            <element signature="e#9335#9336#0" expanded="true" />
+            <element signature="e#9388#9389#0" expanded="true" />
+            <element signature="e#9432#9433#0" expanded="true" />
+            <element signature="e#9470#9471#0" expanded="true" />
+            <element signature="e#9503#9504#0" expanded="true" />
+            <element signature="e#9556#9557#0" expanded="true" />
+            <element signature="e#9600#9601#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/CityMapper.xml">
+    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/PlaneTicketServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="242" column="9" selection-start-line="242" selection-start-column="9" selection-end-line="242" selection-end-column="9" />
-          <folding>
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CITY..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="select from ..city..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="delete from ..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="select count..city..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="update city ..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="update city ..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="update city ..." />
-            <marker date="1461676605962" expanded="true" signature="-1:-1" placeholder="select c.CIT..city..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7352941">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="33" selection-end-column="6" />
+          <caret line="60" column="110" selection-start-line="60" selection-start-column="110" selection-end-line="60" selection-end-column="110" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addPlaneTicket.jsp">
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlanePoolDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.852941">
-          <caret line="30" column="10" selection-start-line="26" selection-start-column="4" selection-end-line="30" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminMain.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3235292">
-          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addCity.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9491525">
-          <caret line="50" column="8" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -3030,43 +2820,144 @@
     <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/AdminController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="44" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="317" column="43" selection-start-line="317" selection-start-column="30" selection-end-line="317" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addCity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6271186">
+          <caret line="52" column="4" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/addPlaneTicket.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.147059">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/adminMain.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7647057">
+          <caret line="64" column="60" selection-start-line="63" selection-start-column="8" selection-end-line="64" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/bgUserList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8983052">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/CityList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.118644">
+          <caret line="56" column="56" selection-start-line="56" selection-start-column="56" selection-end-line="56" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/planeInfoList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7647057">
+          <caret line="56" column="62" selection-start-line="56" selection-start-column="62" selection-end-line="56" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/registerAdmin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.617647">
+          <caret line="99" column="48" selection-start-line="99" selection-start-column="48" selection-end-line="99" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/planeTicketList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.147059">
+          <caret line="56" column="62" selection-start-line="50" selection-start-column="10" selection-end-line="56" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updateAdmin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7647057">
+          <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updateCity.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7647057">
+          <caret line="53" column="56" selection-start-line="53" selection-start-column="56" selection-end-line="53" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/admin/updatePlaneTicket.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.029412">
+          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="37.5">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="7" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+          <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
           <folding>
-            <marker date="1459756458940" expanded="true" signature="4154:4232" placeholder="select * FRO..USER..." />
-            <marker date="1459756458940" expanded="true" signature="4733:4842" placeholder="select from ..user..." />
-            <marker date="1459756458940" expanded="true" signature="5125:5188" placeholder="delete from ..." />
-            <marker date="1459756458940" expanded="true" signature="5482:5498" placeholder="delete from ..." />
-            <marker date="1459756458940" expanded="true" signature="5876:6116" placeholder="insert into ..." />
-            <marker date="1459756458940" expanded="true" signature="7636:7661" placeholder="select count..user..." />
-            <marker date="1459756458940" expanded="true" signature="9006:9285" placeholder="update user ..." />
-            <marker date="1459756458940" expanded="true" signature="9694:10159" placeholder="update user ..." />
-            <marker date="1459756458940" expanded="true" signature="10456:10703" placeholder="update user ..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="select * FRO..USER..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="select from ..user..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="delete from ..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="insert into ..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="select count..user..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="update user ..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="update user ..." />
+            <marker date="1461853106303" expanded="true" signature="-1:-1" placeholder="update user ..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/UserDaoMybatis.java">
+    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="37" />
-          <folding />
+        <state vertical-scroll-proportion="-7.0">
+          <caret line="241" column="40" selection-start-line="241" selection-start-column="32" selection-end-line="241" selection-end-column="40" />
+          <folding>
+            <element signature="e#5024#5025#0" expanded="true" />
+            <element signature="e#5090#5091#0" expanded="true" />
+            <element signature="e#6530#6531#0" expanded="true" />
+            <element signature="e#6567#6568#0" expanded="true" />
+            <element signature="e#6627#6628#0" expanded="true" />
+            <element signature="e#6679#6680#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/UserServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/userCenter.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="44" />
+        <state vertical-scroll-proportion="-3.6764705">
+          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -3074,15 +2965,75 @@
     <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="119" column="45" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
+          <caret line="153" column="34" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/user/userCenter.jsp">
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlanePoolDaoMybatis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.764706">
-          <caret line="82" column="194" selection-start-line="82" selection-start-column="194" selection-end-line="82" selection-end-column="194" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-domain/src/main/java/com/chen/plane/domain/pojo/PlanePool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="223" column="28" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
+          <folding>
+            <element signature="e#5821#5822#0" expanded="true" />
+            <element signature="e#5869#5870#0" expanded="true" />
+            <element signature="e#5904#5905#0" expanded="true" />
+            <element signature="e#5934#5935#0" expanded="true" />
+            <element signature="e#5981#5982#0" expanded="true" />
+            <element signature="e#6019#6020#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlaneTicketMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.04">
+          <caret line="96" column="24" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="24" />
+          <folding>
+            <marker date="1462007970401" expanded="true" signature="4397:4436" placeholder="SELECT from ..PLANE_FIRST..." />
+            <marker date="1462007970401" expanded="true" signature="4397:4539" placeholder="SELECT pf.CA..PLANE_FIRST..." />
+            <marker date="1462007970401" expanded="true" signature="5469:5588" placeholder="select from ..plane_ticket..." />
+            <marker date="1462007970401" expanded="true" signature="5871:5944" placeholder="delete from ..." />
+            <marker date="1462007970401" expanded="true" signature="6245:6269" placeholder="delete from ..." />
+            <marker date="1462007970401" expanded="true" signature="6700:7160" placeholder="insert into ..." />
+            <marker date="1462007970401" expanded="true" signature="9304:9337" placeholder="select count..plane_ticket..." />
+            <marker date="1462007970401" expanded="true" signature="11107:11634" placeholder="update plane..." />
+            <marker date="1462007970401" expanded="true" signature="12050:12925" placeholder="update plane..." />
+            <marker date="1462007970401" expanded="true" signature="13229:13648" placeholder="update plane..." />
+            <marker date="1462007970401" expanded="true" signature="13725:13751" placeholder="select * fro..plane_ticket..." />
+            <marker date="1462007970401" expanded="true" signature="13830:14012" placeholder="SELECT pt.* ..PLANE_TICKET..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/PlaneTicketDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-service/src/main/java/com/chen/plane/service/impl/TicketServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/java/com/chen/plane/dao/mybatis/PlaneTicketDaoMybatis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="24" selection-start-line="62" selection-start-column="24" selection-end-line="62" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -3090,31 +3041,41 @@
     <entry file="file://$PROJECT_DIR$/plane-controller/src/main/java/com/chen/plane/controller/TicketController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="126" column="40" selection-start-line="126" selection-start-column="40" selection-end-line="126" selection-end-column="40" />
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plane-dao/src/main/resources/mysql/PlanePoolMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8363636">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+          <folding>
+            <marker date="1462001982109" expanded="true" signature="1493:1777" placeholder="SELECT * FRO..PLANE_POOL..." />
+            <marker date="1462001982109" expanded="true" signature="5756:5884" placeholder="select from ..plane_pool..." />
+            <marker date="1462001982109" expanded="true" signature="6167:6249" placeholder="delete from ..." />
+            <marker date="1462001982109" expanded="true" signature="6548:6570" placeholder="delete from ..." />
+            <marker date="1462001982109" expanded="true" signature="6953:7220" placeholder="insert into ..." />
+            <marker date="1462001982109" expanded="true" signature="9033:9064" placeholder="select count..plane_pool..." />
+            <marker date="1462001982109" expanded="true" signature="10593:10997" placeholder="update plane..." />
+            <marker date="1462001982109" expanded="true" signature="11411:12068" placeholder="update plane..." />
+            <marker date="1462001982109" expanded="true" signature="12370:12735" placeholder="update plane..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/ticketMain.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-52.911766">
-          <caret line="126" column="148" selection-start-line="126" selection-start-column="67" selection-end-line="126" selection-end-column="148" />
+        <state vertical-scroll-proportion="-21.32353">
+          <caret line="129" column="25" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/WEB-INF/pages/ticket/userTicketCenter.jsp">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.1764705">
-          <caret line="56" column="22" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plane-controller/src/main/webapp/modules/common/css/com.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50883394">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.45387453">
+          <caret line="248" column="32" selection-start-line="248" selection-start-column="32" selection-end-line="248" selection-end-column="32" />
           <folding />
         </state>
       </provider>

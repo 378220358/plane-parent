@@ -17,6 +17,21 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="/modules/common/css/validate.css"/> ">
     <script language="javascript" type="text/javascript" src="<c:url value="/modules/common/js/jquery-2.1.4.min.js"/>"></script>
     <script type="text/javascript" language="javascript">
+        function checkUser(){
+            $.ajax({
+                type:"GET",
+                url: "/plane/user/checkUser.do?userName="+$("#userName").val(),
+                contentType: "application/json; charset=utf-8",
+                timeout: 60000 * 3,
+                dataType:"json",
+                success:function(data){
+                    if(data == 'exist'){
+                        alert("该用户名以及存在");
+                    }
+                }
+            });
+            $("#userName")
+        }
 
         function validateRegister(){
             var userName = $("#userName").val();
@@ -64,7 +79,7 @@
                     </c:if>
                     <div class="input-group">
                         <span class="input-group-addon">用&nbsp 户&nbsp&nbsp名：</span>
-                        <input type="text" name="userName"  id="userName" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1">
+                        <input type="text" name="userName"  id="userName" class="form-control" placeholder="请输入用户名" aria-describedby="basic-addon1" onblur="checkUser()">
                     </div>
                     <p></p>
                     <div class="input-group">

@@ -37,4 +37,24 @@ public class CityDaoMybatis extends BaseDaoMyBatis implements CityDao{
 		log.debug("CityDaoMybatis.getCityIdByCityName<<<");
 		return cityId;
 	}
+
+	@Override public City getCityById(Integer cityId) {
+		log.debug("CityDaoMybatis.getCityById>>>");
+		City city = getSqlSession().selectOne(NAMESPACE + "selectByPrimaryKey",cityId);
+		log.debug("CityDaoMybatis.getCityById<<<");
+		return city;
+	}
+
+	@Override public void updateCity(City city) {
+		log.debug("CityDaoMybatis.updateCity>>>");
+		getSqlSession().update(NAMESPACE + "updateByPrimaryKeySelective",city);
+		log.debug("CityDaoMybatis.updateCity<<<");
+	}
+
+	@Override public void deleteCity(Integer cityId) {
+		log.debug("CityDaoMybatis.deleteCity>>>");
+		getSqlSession().delete(NAMESPACE + "deleteByPrimaryKey", cityId);
+		log.debug("CityDaoMybatis.deleteCity<<<");
+	}
+
 }
